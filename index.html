@@ -417,7 +417,7 @@ document.documentElement.classList.add('js');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var mobile = window.matchMedia && window.matchMedia('(max-width:760px)').matches;
   document.fonts.load('600 200px Poppins').then(function () {
-    if (reduce) { slots[0].innerHTML = 'Difficulty'; slots[1].innerHTML = 'brief.'; return; }
+    if (reduce) { slots[0].innerHTML = 'Difficulty'; slots[1].innerHTML = 'brief.'; slots.forEach(function (sl) { sl.removeAttribute('tabindex'); }); return; }
     requestAnimationFrame(function () { requestAnimationFrame(function () {
       setup();
       if (mobile) { var flips = 0, loop = setInterval(function () { morphTo(idx === 0 ? 1 : 0); if (++flips >= 4) clearInterval(loop); }, 4200); }
