@@ -397,6 +397,10 @@ figure.edge .pane img{margin:0;width:100%;clip-path:inset(3px)}
 .cstabs{display:flex;gap:8px;margin:55px 0 0;flex-wrap:wrap}
 .cstabs button{all:unset;cursor:pointer;font:600 .95rem/1 "Poppins",system-ui,sans-serif;padding:13px 20px 12px;border-radius:999px;background:var(--tint);color:var(--ink)}
 .cstabs button[aria-selected="true"]{background:var(--bar);color:var(--on-bar)}
+/* dark mode: the selected tab inverts to off-white, since navy-on-navy left too little difference between
+   selected and unselected (WCAG 1.4.11 check, 2026-10-25) */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cstabs button[aria-selected="true"]{background:var(--ink);color:var(--ground)}}
+:root[data-theme="dark"] .cstabs button[aria-selected="true"]{background:var(--ink);color:var(--ground)}
 .cstabs button:focus-visible{outline:2px solid var(--rose-txt);outline-offset:3px}
 .cspanel:focus-visible{outline:none}
 /* every tab's content starts the same distance below the tabs */
