@@ -403,6 +403,11 @@ figure.edge .pane img{margin:0;width:100%;clip-path:inset(3px)}
 .cspanel .secbody > .blk:first-child h2{margin-top:0}
 .ev.ev--flat{border:0;border-radius:0;overflow:visible;margin:0}
 .ev.ev--flat .inner{padding:0;border:0}
+/* line height scales with each text size: the template's 150% resolved to a fixed 25.5px, so 11-13px captions and
+   small headings were spaced as if they were body text (her ask, 2026-10-25: tighter headers and captions) */
+body:has(.topbar){line-height:1.5}
+figcaption{line-height:1.45}
+.blk h2{line-height:1.3}
 /* the small subheadings sit over rounded images and cards; 2px in, they read as aligned with the curve (her call) */
 .ev .inner .evblk .evsub{padding-left:2px}
 /* Jordan's portrait: a photo with soft corners and no outline, large enough to read as a person; the text beside it
