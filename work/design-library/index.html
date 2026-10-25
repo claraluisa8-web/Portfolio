@@ -1,0 +1,1303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design Library: Seating Flexibility and Planned Group Work | Clara Luisa Matthews</title>
+<meta name="description" content="A research study for the Design Council on how seating could better support planned group work in NC State&#x27;s Design Library, with a new method for linking responses to user archetypes.">
+<link rel="canonical" href="https://claramatthews.com/work/design-library/">
+<meta name="theme-color" content="#FFFBF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#212E5E" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Clara Luisa Matthews">
+<meta property="og:title" content="Design Library: Seating Flexibility and Planned Group Work | Clara Luisa Matthews">
+<meta property="og:description" content="A research study for the Design Council on how seating could better support planned group work in NC State&#x27;s Design Library, with a new method for linking responses to user archetypes.">
+<meta property="og:url" content="https://claramatthews.com/work/design-library/">
+<meta property="og:image" content="https://claramatthews.com/og/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Design Library: Seating Flexibility and Planned Group Work | Clara Luisa Matthews">
+<meta name="twitter:description" content="A research study for the Design Council on how seating could better support planned group work in NC State&#x27;s Design Library, with a new method for linking responses to user archetypes.">
+<meta name="twitter:image" content="https://claramatthews.com/og/og-home.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300..800;1,400&family=Poppins:wght@500;600&family=Spectral:ital,wght@1,300&display=swap">
+<style id="css">:root{--ground:#FFFFFF;--tint:#FFE8F0;--ink:#12161C;--mute:#4E5866;
+ --blue:#14519F;--rose:#D6246E;--rose-txt:#B81A5C;--rule:rgba(18,22,28,.15);--edge:rgba(18,22,28,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --ground:#0F1319;--tint:#1C1922;--ink:#F0F2F5;--mute:#9AA3B0;
+ --blue:#6BA0EE;--rose:#F573A0;--rose-txt:#F573A0;--rule:rgba(240,242,245,.16);--edge:rgba(240,242,245,.07)}}
+:root[data-theme="dark"]{--ground:#0F1319;--tint:#1C1922;--ink:#F0F2F5;--mute:#9AA3B0;
+ --blue:#6BA0EE;--rose:#F573A0;--rose-txt:#F573A0;--rule:rgba(240,242,245,.16);--edge:rgba(240,242,245,.07)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+ font-family:"Karla",system-ui,sans-serif;font-size:17px;line-height:150%;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 40px}
+.wrap p[data-p],.wrap .stand{max-width:72ch}
+@media (max-width:700px){.wrap{padding:0 22px}}
+.disp{font-family:"Poppins",system-ui,sans-serif;
+ letter-spacing:.04em;font-weight:500;text-wrap:balance}
+.topbar{max-width:1040px;margin:0 auto;padding:26px 40px 0;display:flex;align-items:center;gap:15px}
+.topbar svg{width:26.25px;height:auto}
+.topbar .nm{font-family:"Poppins",sans-serif;font-weight:500;
+ letter-spacing:.04em;font-size:1.125rem}
+.topbar .bk{margin-left:auto;font-size:.78rem;font-weight:700;color:var(--mute);
+ text-decoration:none;padding:9px 1px;position:relative;
+ display:inline-flex;align-items:center;gap:7px;transition:color .18s ease}
+.topbar .bk::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:2px;
+ border-radius:2px;background:var(--rose-txt);transform:scaleX(0);transform-origin:left;
+ transition:transform .26s cubic-bezier(.34,1.4,.64,1)}
+.topbar .bk:hover{color:var(--ink)}
+.topbar .bk:hover::after{transform:scaleX(1)}
+.topbar .bk:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.topbar .bk .ar{display:inline-block;transition:transform .18s ease}
+.topbar .bk:hover .ar{transform:translateX(-3px)}
+.eyebrow{font-size:.66rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+ color:var(--rose);margin:54px 0 14px}
+h1{font-family:"Poppins",sans-serif;letter-spacing:.04em;
+ font-weight:600;font-size:clamp(1.6rem,4.2vw,2.5rem);line-height:150%;margin:0 0 22px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--rose)}
+.stand{font-size:1.1rem;color:var(--mute);margin:0 0 34px}
+p{margin:0 0 12px}
+h2{font-family:"Karla",sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.14em;
+ text-transform:uppercase;color:var(--rose);margin:44px 0 12px}
+/* one metadata system: label above value, three columns, prose or bubbles */
+.sum,.chips{display:grid;grid-template-columns:repeat(3,1fr);column-gap:38px;row-gap:22px;
+ align-items:start}
+.sum{border-top:1px solid var(--rule);padding:22px 0 0;margin:0}
+.sum .k,.chips .r b{display:block;font-size:.6rem;font-weight:800;letter-spacing:.13em;
+ text-transform:uppercase;color:var(--rose);margin:0 0 7px}
+.sum .v{font-size:.92rem;line-height:150%;color:var(--ink)}
+@media (max-width:640px){.sum,.chips{grid-template-columns:1fr;row-gap:18px}}
+.slot{border:1px dashed var(--rule);background:var(--tint);color:var(--mute);
+ padding:34px 20px;text-align:center;font-size:.8rem;font-weight:700;letter-spacing:.06em;
+ text-transform:uppercase;margin:0 0 30px}
+.pull{border-left:3px solid var(--rose);padding-left:20px;margin:34px 0;
+ font-family:"Poppins",sans-serif;font-weight:500;letter-spacing:.04em;
+ font-size:1.3rem;line-height:150%}
+.pull cite{display:block;font-family:"Karla",sans-serif;font-style:normal;font-size:.76rem;
+ font-weight:700;color:var(--mute);letter-spacing:.05em;margin-top:12px}
+.ev{border:1px solid var(--rule);border-radius:14px;margin:0 0 11px;overflow:hidden}
+.ev summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;align-items:center;gap:12px;
+ font-size:.9rem;font-weight:800;background:var(--blue);color:var(--ground)}
+.ev summary::-webkit-details-marker{display:none}
+.tick{width:15px;height:15px;flex:0 0 15px;border:1.5px solid var(--blue);position:relative;
+ border-radius:2px;transition:background .18s ease}
+.tick::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:1.5px;background:var(--blue);
+ transform:translate(-50%,-50%)}
+.tick::before{content:"";position:absolute;left:50%;top:50%;width:1.5px;height:7px;background:var(--blue);
+ transform:translate(-50%,-50%);transition:opacity .22s ease,transform .22s ease}
+.ev[open] .tick::before,[aria-expanded="true"] .tick::before{opacity:0;transform:translate(-50%,-50%) rotate(90deg)}
+.ev summary .tick{background:transparent;border-color:var(--ground);border-radius:50%}
+.ev summary .tick::after,.ev summary .tick::before{background:var(--ground)}
+.more{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;
+ padding:9px 0;margin:0 0 1.15em;cursor:pointer;font-family:inherit;text-align:left}
+.more:hover .tick{background:var(--blue)}
+.more:hover .tick::after,.more:hover .tick::before{background:var(--ground)}
+.more:focus-visible{outline:2px solid var(--rose);outline-offset:4px;border-radius:3px}
+.more .ln{flex:1;height:1px;background:var(--rule);transition:background .18s ease}
+.more:hover .ln{background:var(--blue)}
+.more .dots{display:flex;gap:4px;transition:opacity .22s ease}
+.more .dots i{width:5px;height:5px;border-radius:50%;background:var(--rule);display:block;
+ transition:background .18s ease}
+.more:hover .dots i{background:var(--blue)}
+.more[aria-expanded="true"] .dots{opacity:0}
+/* a closed section has ended, so it should not reserve the air an open one needs */
+.more[aria-expanded="false"]{margin-bottom:2px}
+.rest + .blk h2{transition:margin-top .34s cubic-bezier(.4,0,.2,1)}
+.rest:not(.open) + .blk h2{margin-top:26px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rest{display:grid;grid-template-rows:0fr;transition:grid-template-rows .34s cubic-bezier(.4,0,.2,1)}
+.rest>.in2{overflow:hidden;min-height:0}
+.rest.open{grid-template-rows:1fr}
+.rest.open>.in2>*{animation:rise .34s cubic-bezier(.2,.7,.3,1) both}
+.rest.open>.in2>*:nth-child(2){animation-delay:.05s}
+.rest.open>.in2>*:nth-child(3){animation-delay:.1s}
+.rest.open>.in2>*:nth-child(4){animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}
+ .rest{grid-template-rows:1fr}.rest:not(.open)>.in2{display:none}}
+figure{margin:0 0 34px}
+/* A panel has no half-leading, so matching the text margin reads tight. It also carries
+   more visual weight than a line of type, so it wants more room than parity would give.
+   ~35px optical against text's ~23px. */
+.blk:has(> h2) + .blk figure,
+.blk:has(> h2) + .blk .ev{margin-top:20px}
+figure.wide{width:auto;max-width:none;margin-left:0;transform:none}
+.ph{background:var(--tint);border:1px solid var(--rule);display:grid;place-items:center;
+ background-image:linear-gradient(var(--edge) 1px,transparent 1px),
+  linear-gradient(90deg,var(--edge) 1px,transparent 1px);background-size:34px 34px}
+.ph span{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+ color:var(--mute);text-align:center;padding:0 20px}
+figure.wide .ph{aspect-ratio:16/9}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pair .ph{aspect-ratio:1.45}
+.pair .pane:last-child img{object-position:right}
+@media (max-width:640px){.pair{grid-template-columns:1fr}}
+figcaption{font-size:.8rem;color:var(--mute);margin-top:10px;max-width:560px}
+figure img{display:block;width:100%;height:auto;border:0;border-radius:16px}
+figure.wide img{aspect-ratio:auto;height:auto}
+.pair img,.pair video{aspect-ratio:1.45;object-fit:cover;width:100%;display:block;
+ border:0;border-radius:16px}
+.pair .pane{position:relative}
+.pair .tagv{position:absolute;left:9px;bottom:9px;background:rgba(18,22,28,.82);color:#fff;
+ font-size:.56rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+ padding:3px 8px;border-radius:3px}
+.vid .frame{position:relative;aspect-ratio:16/9;background:var(--tint);overflow:hidden;border-radius:16px}
+.vid .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
+.vid .post{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vid .alt{font-size:.76rem;margin:8px 0 0}
+.vid .alt a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.vid .alt a:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+.vid .ph{position:absolute;inset:0}
+.vid .fb{position:absolute;inset:0;display:grid;place-items:center;text-decoration:none}
+.vid .fb:focus-visible{outline:2px solid var(--rose);outline-offset:-4px}
+.vid .pbtn{width:62px;height:62px;border-radius:50%;background:var(--rose);display:grid;
+ place-items:center;box-shadow:0 6px 22px rgba(214,36,110,.34);
+ transition:transform .26s cubic-bezier(.34,1.4,.64,1)}
+.vid .fb:hover .pbtn,.vid .fb:focus-visible .pbtn{transform:scale(1.08)}
+.vid .pbtn::after{content:"";border-left:16px solid #fff;border-top:10px solid transparent;
+ border-bottom:10px solid transparent;margin-left:5px}
+.vid .fbnote{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:.66rem;
+ font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.ev .cnt{font-size:.68rem;font-weight:700;color:rgba(255,255,255,.75);margin-left:auto;letter-spacing:.06em}
+.ev .inner{padding:20px 18px 18px;border-top:1px solid var(--rule)}
+.ev .inner p{font-size:.94rem;color:var(--mute);margin:0 0 .7em}
+.ev .inner .evblk:last-child p:last-child{margin:0}
+.ev .inner .evblk:last-child .pills,.ev .inner .evblk:last-child .persona,.ev .inner .evblk:last-child .evimg,.ev .inner .evblk:last-child .evimg-zoom{margin-bottom:0}
+.ev .inner .evimg{margin:0 0 10px}
+.ev .inner .evimg img{width:100%;height:auto;display:block;border:0;border-radius:16px}
+.ev .inner .persona{display:flex;gap:20px;align-items:stretch;border:1px solid var(--rule);
+ border-radius:14px;padding:18px;margin:0 0 10px}
+.ev .inner .persona .ph-pill{flex:0 0 130px;width:130px;border-radius:20px;
+ overflow:hidden;border:1px solid var(--rule)}
+.ev .inner .persona .ph-pill img{width:100%;height:100%;object-fit:cover;display:block}
+.ev .inner .persona .info{flex:1;min-width:0}
+.ev .inner .persona .who{font-size:.95rem;color:var(--ink);margin:0 0 12px}
+.ev .inner .persona .who b{font-weight:800}
+.ev .inner .persona .who .org{display:block;color:var(--mute);font-size:.82rem;margin-top:2px}
+.ev .inner .persona .pf{margin:0 0 .7em}
+.ev .inner .persona .pf:last-child{margin:0}
+.ev .inner .persona .pf b{display:block;font-weight:800;font-size:.68rem;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--ink);margin:0 0 4px}
+.ev .inner .persona .pf span{font-size:.9rem;color:var(--mute);line-height:150%}
+
+.evimg-zoom{all:unset;display:block;position:relative;cursor:zoom-in;margin:0 0 10px}
+.evimg-zoom img{width:100%;height:auto;display:block;border:0;border-radius:16px}
+.evimg-zoom .zoomtag{position:absolute;right:10px;bottom:10px;background:rgba(18,22,28,.82);
+ color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+ padding:5px 10px;border-radius:4px}
+.evimg-zoom:hover .zoomtag,.evimg-zoom:focus-visible .zoomtag{background:var(--rose)}
+.evimg-zoom:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+.jmap-modal{position:fixed;inset:0;z-index:200;background:rgba(15,19,25,.94);
+ display:none;flex-direction:column}
+.jmap-modal.on{display:flex}
+.jmap-bar{display:flex;align-items:center;gap:14px;padding:14px 18px;color:#fff;flex-wrap:wrap}
+.jmap-bar .jmap-label{font-size:.82rem;color:rgba(255,255,255,.75);flex:1;min-width:140px}
+.jmap-tools{display:flex;gap:8px;margin-left:auto}
+.jmap-tools button{font-family:inherit;font-size:.85rem;font-weight:700;padding:7px 13px;
+ border-radius:6px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;
+ cursor:pointer}
+.jmap-tools button:hover,.jmap-tools button:focus-visible{border-color:#fff}
+.jmap-tools .jmap-close{font-size:1.2rem;line-height:1;padding:6px 12px}
+.jmap-stage{flex:1;overflow:hidden;position:relative;display:flex;align-items:center;
+ justify-content:center;cursor:grab;touch-action:none}
+.jmap-stage.grabbing{cursor:grabbing}
+.jmap-inner{transform-origin:center center;will-change:transform}
+.jmap-inner svg{display:block;pointer-events:none}
+.jmap-status{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;
+ font-size:.85rem;margin:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.jmap-inner{transition:none}}
+
+@media (max-width:560px){
+  .ev .inner .persona{flex-direction:column;align-items:flex-start}
+  .ev .inner .persona .ph-pill{width:120px;height:160px;border-radius:20px}
+}
+/* enumerable content, in the spec sheet's vocabulary but without its box */
+.klist{margin:0 0 1.5em;border-top:1px solid var(--rule)}
+.klist .r{display:grid;grid-template-columns:132px 1fr;gap:18px;padding:12px 0;
+ border-bottom:1px solid var(--rule);font-size:.94rem;align-items:baseline}
+.klist .r b{font-weight:800;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;
+ color:var(--ink)}
+.klist .r span{color:var(--mute);line-height:150%}
+@media (max-width:560px){.klist .r{grid-template-columns:1fr;gap:3px}}
+.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 1.5em}
+.flow .st{border:1px solid var(--rule);border-radius:999px;padding:7px 15px;font-size:.8rem;
+ font-weight:700;color:var(--mute)}
+.flow .st.on{background:var(--rose);border-color:var(--rose);color:#fff}
+.flow .ar{color:var(--mute);font-size:.9rem}
+.flow .me{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+ color:var(--rose)}
+.chips{margin:0 0 40px;border-bottom:1px solid var(--rule);padding:22px 0 24px}
+.chips .r:last-child{grid-column:span 2}
+@media (max-width:640px){.chips .r:last-child{grid-column:auto}}
+.chips .bb{display:flex;flex-wrap:wrap;gap:6px}
+.chips .bb span{background:var(--tint);color:var(--ink);border-radius:999px;padding:5px 13px;
+ font-size:.78rem;font-weight:600}
+
+/* numbered lists: tiles for findings, thread for a process */
+.steps{list-style:none;margin:0 0 12px;padding:0}
+.steps .n{font-family:"Poppins",sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
+.steps .t{display:block;min-width:0}
+.steps.tiles{display:grid;gap:10px;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr))}
+.steps.tiles.c1{--cols:1}.steps.tiles.c2{--cols:2}.steps.tiles.c3{--cols:3}.steps.tiles.c4{--cols:4}
+.steps.tiles.c5{grid-template-columns:repeat(6,minmax(0,1fr))}
+.steps.tiles.c5 li{grid-column:span 2}.steps.tiles.c5 li:nth-child(n+4){grid-column:span 3}
+.steps.tiles li{background:var(--tint);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.steps.tiles .n{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--rose);color:var(--ground);font-size:.9rem}
+.steps.tiles .t{font-size:.95rem;line-height:140%}
+.stepsgrp .sname{font-family:"Poppins",sans-serif;font-weight:600;letter-spacing:.02em;font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:130%;color:var(--rose-txt);margin:30px 0 24px;max-width:none;text-wrap:balance}
+.stepsgrp .slead{position:relative;font-weight:700;margin:0 0 14px}
+.stepsgrp .slead.thread{padding-left:56px}
+.stepsgrp .slead.thread::before{content:"";position:absolute;left:12px;top:.62em;width:10px;height:10px;border-radius:50%;background:var(--rose)}
+.stepsgrp .slead.thread::after{content:"";position:absolute;left:16px;top:calc(.62em + 10px);bottom:-14px;width:2px;background:var(--rule)}
+.steps.thread{margin-bottom:28px}
+.steps.thread li{position:relative;padding:0 0 22px 56px;min-height:34px}
+.steps.thread li:last-child{padding-bottom:0}
+.steps.thread li::before{content:"";position:absolute;left:16px;top:38px;bottom:4px;width:2px;background:var(--rule)}
+.steps.thread li:last-child::before{display:none}
+.steps.thread .n{position:absolute;left:0;top:0;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:2px solid var(--rose);background:var(--ground);color:var(--rose-txt);font-size:.85rem}
+.steps.thread .t{padding-top:4px;font-size:1rem}
+@media (max-width:900px){.steps.tiles.c4{--cols:2}.steps.tiles.c5{grid-template-columns:repeat(2,minmax(0,1fr))}
+.steps.tiles.c5 li,.steps.tiles.c5 li:nth-child(n+4){grid-column:auto}.steps.tiles.c5 li:last-child{grid-column:1/-1}}
+@media (max-width:640px){.steps.tiles,.steps.tiles.c2,.steps.tiles.c3,.steps.tiles.c4{--cols:1}
+.steps.tiles.c5{grid-template-columns:1fr}.steps.tiles.c5 li:last-child{grid-column:auto}}
+/* one figure standard on every case study: no frame, 16px corners; the small inset crops any screenshot outline */
+figure .pane{border-radius:16px;overflow:hidden}
+figure .pane img{display:block;border:0;margin:-3px;width:calc(100% + 6px);max-width:none;height:auto}
+figure .pane .evimg-zoom{margin:0}
+.duo{display:grid;grid-template-columns:5fr 7fr;gap:14px;align-items:center}
+@media (max-width:700px){.duo{grid-template-columns:1fr}}
+.todo{background:rgba(255,200,0,.38);padding:.05em .3em;border-radius:3px}
+.note{border-top:1px solid var(--rule);margin-top:54px;padding:22px 0 80px;font-size:.86rem;color:var(--mute)}
+.note b{color:var(--ink)}
+
+/* ---- temporary editing scaffold — remove with the editor ---- */
+body{padding-bottom:0}
+body.editing [data-p]{outline:1px dashed var(--edge);outline-offset:5px;border-radius:2px}
+body.editing [data-p]:hover{outline-color:var(--rule)}
+body.editing [data-p]:focus{outline:2px solid var(--blue);outline-offset:5px;background:var(--edge)}
+.blk{position:relative}
+.blkctl{display:none}
+body.editing .blkctl{display:flex;gap:4px;position:absolute;left:-56px;top:2px}
+@media (max-width:1150px){body.editing .blkctl{position:static;margin:0 0 6px}}
+.blkctl button{width:22px;height:22px;padding:0;line-height:1;border:1px solid var(--rule);
+ background:var(--ground);color:var(--mute);border-radius:3px;cursor:pointer;font-size:13px;
+ font-family:inherit}
+.blkctl button:hover{color:var(--ink);border-color:var(--ink)}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ground);
+ border-top:1px solid var(--rule);padding:10px 20px;display:flex;align-items:center;gap:10px;
+ font-size:.78rem;flex-wrap:wrap}
+#bar .tag{font-weight:800;letter-spacing:.11em;text-transform:uppercase;font-size:.6rem;
+ color:var(--ground);background:var(--rose);padding:3px 7px;border-radius:2px}
+#bar button{font-family:inherit;font-size:.78rem;font-weight:700;padding:7px 13px;border-radius:3px;
+ border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+#bar button:hover{border-color:var(--ink)}
+#bar button[disabled]{opacity:.4;cursor:default}
+#bar button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+#bar button.go{background:var(--rose);border-color:var(--rose);color:#fff}
+#bar button.go[disabled]{background:transparent;color:var(--mute);border-color:var(--rule)}
+#st{color:var(--mute);margin-left:auto;text-align:right}
+#st b{color:var(--ink)}
+
+.barInner{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1}
+.bartoggle{font-family:inherit;font-size:.9rem;font-weight:700;width:30px;height:30px;
+ flex:0 0 30px;border-radius:50%;border:1px solid var(--rule);background:var(--ground);
+ color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
+ transition:transform .22s ease}
+#bar.collapsed .barInner{display:none}
+#bar.collapsed{padding:8px 10px}
+#bar.collapsed .bartoggle{transform:rotate(180deg)}
+
+.addmenu{position:fixed;left:20px;bottom:64px;z-index:60;background:var(--ground);
+ border:1px solid var(--rule);border-radius:8px;box-shadow:0 10px 30px rgba(18,22,28,.18);
+ padding:6px;display:none;flex-direction:column;min-width:160px}
+.addmenu.show{display:flex}
+.addmenu button{font-family:inherit;font-size:.82rem;font-weight:600;text-align:left;
+ padding:8px 10px;border:0;background:none;color:var(--ink);cursor:pointer;border-radius:5px}
+.addmenu button:hover,.addmenu button:focus-visible{background:var(--tint)}
+.addmenu.ctxEv button[data-scope="block"]{display:none}
+.addmenu:not(.ctxEv) button[data-scope="ev"]{display:none}
+.ev .inner .evblk .evsub{font-family:"Karla",sans-serif;font-weight:800;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:28px 0 16px}
+.ev .inner .evblk:first-child .evsub{margin-top:0}
+.ev .inner .pills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+.ev .inner .pills .pill{background:var(--tint);border-radius:16px;padding:23px}
+.ev .inner .pills .pill b{display:block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);line-height:1;margin:0 0 4px}
+.ev .inner .pills .pill span{font-size:.86rem;color:var(--mute);line-height:125%}
+@media (max-width:560px){.ev .inner .pills{grid-template-columns:1fr}}
+
+.ev .inner .evblk{position:relative}
+body.editing .ev .inner .evblk{padding-top:22px}
+.evctl{display:none}
+body.editing .evctl{display:flex;gap:4px;position:absolute;top:0;right:0}
+.evctl button{width:20px;height:20px;padding:0;line-height:1;border:1px solid var(--rule);
+ background:var(--ground);color:var(--mute);border-radius:3px;cursor:pointer;font-size:12px;
+ font-family:inherit}
+.evctl button:hover{color:var(--ink);border-color:var(--ink)}
+.blkctl button[disabled],.evctl button[disabled]{opacity:.35;cursor:default}
+
+
+/* scroll to top — ink at rest, rose on hover, the same language as every other
+   action on the site. 
+   74px clears the temporary draft bar; drop to 22px when that bar goes.
+   */
+.totop{position:fixed;right:22px;bottom:22px;z-index:40;display:inline-flex;
+ align-items:center;justify-content:center;padding:11px 15px;border-radius:999px;
+ cursor:pointer;color:var(--ground);background:var(--ink);border:1px solid var(--ink);
+ box-shadow:0 6px 20px rgba(18,22,28,.18);
+ opacity:0;visibility:hidden;transform:translateY(8px);
+ transition:opacity .28s ease,transform .28s ease,visibility .28s,
+  background .2s ease,border-color .2s ease,color .2s ease}
+[data-up] .totop{opacity:1;visibility:visible;transform:none}
+.totop:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.totop:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.totop svg{width:15px;height:15px;display:block}
+
+/* --- accessibility furniture --- */
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--ink);
+ color:var(--ground);padding:11px 18px;border-radius:0 0 12px 0;font-size:.82rem;
+ font-weight:700;text-decoration:none}
+.skip:focus{left:0}
+@media (max-width:640px){
+  .topbar{padding:20px 22px 0;gap:13px}
+  .topbar svg{width:40px}
+  .topbar .nm{white-space:normal;line-height:1.16;font-size:1.06rem}
+  .topbar .nm .nm2{display:block}
+}
+/* titled items: a short label over its explanation, in tiles and in the thread */
+.steps .sk{display:block;font-family:"Karla",sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin:0 0 6px}
+.steps .sv{display:block}
+.steps.thread .sk{margin-top:2px}
+.ev .inner .pills .pill{padding:22px}
+.ev .inner .pills .pill b{font-size:.78rem;letter-spacing:.08em;margin:0 0 6px;line-height:1.3}
+
+/* a hairline for a light image that would otherwise melt into the ground (set edge on the figure) */
+figure.edge .pane{border:1px solid var(--hairline,#12161C);background:#FFFFFF;padding:22px}
+figure.edge .pane img{margin:0;width:100%;clip-path:inset(3px)}
+@media (max-width:640px){figure.edge .pane{padding:12px}}
+
+/* project facts: one row (team, partner, term, design tools) spread across the full width, plain text, no panel.
+   Each column is as wide as its text; the space left over goes between them. */
+.chips{display:grid;grid-template-columns:repeat(4,minmax(min-content,max-content));justify-content:space-between;gap:16px 32px;background:none;border:0;border-radius:0;padding:0;margin:0 0 40px}
+.chips .r,.chips .r:last-child{padding:0;grid-column:auto;grid-row:auto}
+.chips .r b{margin:0 0 6px}
+.chips .bb{display:block}
+.chips .bb span{display:inline-block;max-width:100%;background:none;padding:0;border-radius:0;font-family:"Poppins",system-ui,sans-serif;font-size:.88rem;font-weight:500;letter-spacing:.01em;color:var(--ink)}
+.chips .bb span:not(:last-child){margin-right:.3em}
+.chips .bb span:not(:last-child)::after{content:","}
+@media (max-width:1080px){.chips{grid-template-columns:minmax(0,1fr);justify-content:stretch;gap:12px}
+ .chips .r{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 18px;align-items:baseline}
+ .chips .r b{margin:0}}
+@media (max-width:640px){.chips{gap:16px}.chips .r{display:block}.chips .r b{margin:0 0 6px}}
+/* the caption-to-title space is 140px with the tabs in it (40px tall); the tabs sit 5px below its middle */
+.cstabs{display:flex;gap:8px;margin:55px 0 0;flex-wrap:wrap}
+.cstabs button{all:unset;cursor:pointer;font:600 .95rem/1 "Poppins",system-ui,sans-serif;padding:13px 20px 12px;border-radius:999px;background:var(--tint);color:var(--ink)}
+.cstabs button[aria-selected="true"]{background:var(--bar);color:var(--on-bar)}
+.cstabs button:focus-visible{outline:2px solid var(--rose-txt);outline-offset:3px}
+.cspanel:focus-visible{outline:none}
+/* every tab's content starts the same distance below the tabs */
+.cspanel .secbody{padding:45px 0 0}
+.cspanel .secbody > .blk:first-child h2{margin-top:0}
+.ev.ev--flat{border:0;border-radius:0;overflow:visible;margin:0}
+.ev.ev--flat .inner{padding:0;border:0}
+/* the small subheadings sit over rounded images and cards; 2px in, they read as aligned with the curve (her call) */
+.ev .inner .evblk .evsub{padding-left:2px}
+/* Jordan's portrait: a photo with soft corners and no outline, large enough to read as a person; the text beside it
+   keeps short lines (about 60 characters) so each field reads as its own chunk */
+.ev .inner .persona{gap:28px;align-items:flex-start}
+.ev .inner .persona .ph-pill{flex:0 0 200px;width:200px;height:260px;border-radius:24px;border:0;padding:0;overflow:hidden;background:none}
+.ev .inner .persona .ph-pill img{border-radius:24px;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.ev .inner .persona .info{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;align-content:start;padding:10px 10px 10px 0}
+.ev .inner .persona .who{grid-column:1/-1;margin-bottom:8px}
+.ev .inner .persona .pf,.ev .inner .persona .pf:last-child{margin:0}
+/* left-aligned, no hyphens. On desktop each column's measure is tuned to Jordan's two paragraphs so the line
+   ends fall as evenly as the words allow (measured: 28px and 33px between longest and shortest line, from 75/82px) */
+.ev .inner .persona .pf span{display:block;text-align:left;hyphens:manual;text-wrap:pretty}
+@media (min-width:1080px){.ev .inner .persona .pf:nth-of-type(1) span{max-width:299px}
+ .ev .inner .persona .pf:nth-of-type(2) span{max-width:258px}
+ /* desktop: a larger photo (same 10:13 frame), more air between photo and text, and the two columns sized to their
+    tuned measures and pushed apart, so the text ends 29px from the card's right edge instead of ~90px */
+ .ev .inner .persona{gap:50px}
+ .ev .inner .persona .ph-pill{flex:0 0 232px;width:232px;height:302px}
+ /* her measurements (2026-10-25): photo to text 50px, 48px from the longest Responsibilities line to Skills, text ends
+    55px from the card's right edge (the column gap is 47px because that longest line stops ~1px short of its 299px column) */
+ .ev .inner .persona .info{flex:1;grid-template-columns:299px 258px;column-gap:47px;justify-content:start;padding-right:0}}
+@media (max-width:900px){.ev .inner .persona .info{grid-template-columns:minmax(0,1fr);max-width:62ch}
+ .ev .inner .persona .pf + .pf{margin-top:16px}}
+@media (max-width:560px){.ev .inner .persona .ph-pill{width:180px;height:234px;flex-basis:auto}}
+.news{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.newsitem{display:flex;align-items:center;gap:16px;padding:12px 20px 12px 12px;border-radius:24px;background:var(--tint);color:var(--ink);text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.newsitem:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(21,29,59,.12)}
+.newsitem:focus-visible{outline:2px solid var(--rose-txt);outline-offset:3px}
+.newsitem img{width:132px;aspect-ratio:4/3;object-fit:cover;border-radius:14px;flex:none;display:block}
+.newsitem .nt{display:flex;flex-direction:column;gap:6px;min-width:0}
+.newsitem .nk{font:800 .64rem/1.3 "Karla",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.newsitem .nc{font-size:.86rem;line-height:1.4}
+.newsitem .ncta{font:600 .78rem/1.2 "Poppins",sans-serif;color:var(--rose-txt);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:860px){.news{grid-template-columns:1fr}}
+@media (max-width:420px){.newsitem{gap:12px;padding:10px 14px 10px 10px}.newsitem img{width:96px}}
+figure .golink{font-size:.76rem;margin:8px 0 0}
+figure .golink a,.vid .alt a{color:var(--rose-txt);text-decoration:underline;text-underline-offset:3px}
+figure .golink a:focus-visible{outline:2px solid var(--rose-txt);outline-offset:2px}
+/* phones: three equal tabs on one row, never one left alone on a second line */
+@media (max-width:560px){.cstabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+ .cstabs button{font-size:.8rem;line-height:1.15;padding:11px 6px 10px;text-align:center}}
+</style>
+<style id="theme">
+:root{--ground:#FFFBF7;--ink:#151D3B;--mute:#59606B;--rose:#9E1C3C;--rose-txt:#9E1C3C;--blue:#004FDF;--on-blue:#FFFFFF;
+ --bar:#212E5E;--on-bar:#FFFBF7;--eyebrow:#212E5E;--pill:#212E5E;
+ --tint:#F2EDE8;--card:#FFFFFF;--rule:rgba(21,29,59,.14);--edge:rgba(21,29,59,.06);--band:#1B2550;--band-fg:#FFFBF7;--band-hi:#F78DA0;--hairline:#171C20;
+ --lg1:#1F9F00;--lg2:#A8D600;--lr:#ED2C00;--lp:#F23483}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#212E5E;--ink:#FFFBF7;--mute:#B7BEDA;--rose:#F78DA0;--rose-txt:#F78DA0;--bar:#34447F;--on-bar:#FFFBF7;--eyebrow:var(--rose-txt);--pill:var(--ink);
+ --blue:#99BDFF;--on-blue:#000000;--tint:#2C3B73;--card:#2A386F;--rule:rgba(255,251,247,.16);--edge:rgba(255,251,247,.07);--band:#141C3D;--hairline:transparent;
+ --lg1:#26C000;--lg2:#A8D600;--lr:#FF542D;--lp:#FF4794;color-scheme:dark}}
+:root[data-theme="dark"]{--ground:#212E5E;--ink:#FFFBF7;--mute:#B7BEDA;--rose:#F78DA0;--rose-txt:#F78DA0;--bar:#34447F;--on-bar:#FFFBF7;--eyebrow:var(--rose-txt);--pill:var(--ink);
+ --blue:#99BDFF;--on-blue:#000000;--tint:#2C3B73;--card:#2A386F;--rule:rgba(255,251,247,.16);--edge:rgba(255,251,247,.07);--band:#141C3D;--hairline:transparent;
+ --lg1:#26C000;--lg2:#A8D600;--lr:#FF542D;--lp:#FF4794;color-scheme:dark}
+body{background:var(--ground);color:var(--ink)}
+.lg1{fill:var(--lg1)}.lg2{fill:var(--lg2)}.lr{fill:var(--lr)}.lp{fill:var(--lp)}
+/* logo: each centre petal about the cap height of the "C" in the wordmark beside it (a petal is a quarter of the logo's width) */
+.ident svg{width:64px;height:auto}
+.topbar svg,body:has(.sheet) .ident svg{width:51px;height:auto}
+@media (max-width:760px){.ident svg{width:51px}}
+@media (max-width:640px){.topbar svg,body:has(.sheet) .ident svg{width:48px}}
+.eyebrow,h2:not(.title):not(.chead):not(.secthead),.sum .k,.chips .r b,.flow .me{color:var(--rose-txt)}
+.mailmenu a:hover,.mailmenu button:hover{color:var(--rose-txt)}
+.steps.tiles .n{background:var(--rose-txt);color:var(--ground)}
+.flow .st.on{background:var(--rose-txt)}
+.links .talk:hover,.totop:hover,.navtoggle:hover,.evimg-zoom:hover .zoomtag,.evimg-zoom:focus-visible .zoomtag{background:var(--rose-txt);border-color:var(--rose-txt);color:var(--ground)}
+.vid .pbtn{background:var(--rose-txt);box-shadow:0 6px 22px rgba(21,29,59,.25)}
+/* landing work cards: the dark neutral behind the photos, light type */
+.band{background:var(--band);color:var(--band-fg)}
+.band:hover{box-shadow:0 30px 70px rgba(21,29,59,.25)}
+.band::after{background:linear-gradient(to top,rgba(20,28,61,.94) 0%,rgba(20,28,61,.78) 28%,rgba(20,28,61,.46) 52%,rgba(20,28,61,.14) 78%,rgba(20,28,61,0) 100%)}
+.band .yr,.band .small{color:rgba(255,251,247,.8)}
+.band:hover .title{color:var(--band-hi)}
+.band--soon .soonhover{color:var(--band-fg);background:rgba(20,28,61,.55)}
+.mailmenu{box-shadow:0 16px 40px rgba(21,29,59,.18)}
+/* one end margin on every page (~125px below the last content); About already ends on its contact card padding */
+body:has(.first){padding-bottom:128px}
+body:has(.sheet){padding-bottom:128px!important}
+body:has(.topbar){padding-bottom:110px}
+/* case study evidence bars: full width with the plus sign, in the subheader blue (Figma: case study buttons) */
+/* dropdown bars: navy, set in Poppins (her picks, 2026-10-24) */
+.ev summary{background:var(--bar);color:var(--on-bar);padding-top:12px;padding-bottom:13px;box-shadow:0 .5px 1px rgba(10,16,40,.3);font-family:"Poppins",system-ui,sans-serif;font-weight:600}
+/* landing eyebrow: navy in light mode */
+p.eyebrow{color:var(--eyebrow)}
+/* the headline's joining words ("is", "the"): Spectral Light Italic, her pick 2026-10-24; sized so its x-height
+   matches what Newsreader had at 1.037em */
+.joint{font-family:"Spectral",serif;font-weight:300;font-style:italic;font-size:1.017em}
+/* "See the work" and "Let's talk" pills: navy in light mode */
+.cta,.links .talk,.mobilenav a.talk{background:var(--pill)}
+/* tile and pill boxes: 5px more room under the text (her ask, 2026-10-24) */
+.steps.tiles li{padding-bottom:27px}
+.pills .pill,.ev .inner .pills .pill{padding-bottom:27px}
+.ev summary .tick{border-color:currentColor}
+.ev summary .tick::after,.ev summary .tick::before{background:currentColor}
+.ev .cnt{color:currentColor;opacity:.75}
+.ev summary:focus-visible{outline:2px solid var(--rose-txt);outline-offset:3px}
+</style>
+<style id="homelink">a.ident,a.home{color:inherit;text-decoration:none}a.home{display:flex;align-items:center;gap:15px}a.ident:focus-visible,a.home:focus-visible{outline:2px solid var(--rose-txt,#B81A5C);outline-offset:4px;border-radius:6px}</style>
+</head>
+<body>
+<div id="root"><a class="skip" href="#main">Skip to content</a><div class="topbar"><a class="home" href="/" aria-label="Clara Luisa Matthews, home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.302 352" role="img" aria-label="Clara Matthews mark"><title>Clara Matthews mark</title><path class="lg1" d="M102.326 249.675C158.838 249.675 204.651 295.487 204.651 352C148.138 352 102.326 306.187 102.326 249.675Z"/><path class="lg1" d="M102.325 176C102.325 232.513 56.5129 278.325 0 278.325C0.000210287 221.813 45.8126 176 102.325 176Z"/><path class="lg2" d="M102.326 102.325C158.838 102.325 204.651 56.5129 204.651 0C148.138 0.000210287 102.326 45.8126 102.326 102.325Z"/><path class="lr" d="M102.326 176C102.326 119.487 148.138 73.6748 204.651 73.6748C204.651 130.187 158.839 176 102.326 176Z"/><path class="lg1" d="M306.977 249.675C363.49 249.675 409.302 295.487 409.302 352C352.789 352 306.977 306.187 306.977 249.675Z"/><path class="lg1" d="M306.977 176C306.977 119.487 352.789 73.6748 409.302 73.6748C409.302 130.187 363.49 176 306.977 176Z"/><path class="lg2" d="M306.977 102.325C363.49 102.325 409.302 56.5129 409.302 0C352.789 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lr" d="M306.976 176C306.976 232.513 261.164 278.325 204.651 278.325C204.651 221.813 250.464 176 306.976 176Z"/><path class="lg2" d="M102.326 249.675C45.8127 249.675 0.00038147 295.487 0.00038147 352C56.5129 352 102.325 306.187 102.326 249.675Z"/><path class="lg2" d="M102.325 176C102.325 119.487 56.5129 73.6748 0 73.6748C0.000210287 130.187 45.8126 176 102.325 176Z"/><path class="lg1" d="M102.326 102.325C45.8127 102.325 0.00038147 56.5129 0.00038147 0C56.5129 0.000210287 102.325 45.8126 102.326 102.325Z"/><path class="lp" d="M102.326 176C102.326 232.513 148.138 278.325 204.651 278.325C204.651 221.813 158.839 176 102.326 176Z"/><path class="lg2" d="M306.977 249.675C250.464 249.675 204.652 295.487 204.652 352C261.164 352 306.977 306.187 306.977 249.675Z"/><path class="lg2" d="M306.977 176C306.977 232.513 352.789 278.325 409.302 278.325C409.302 221.813 363.49 176 306.977 176Z"/><path class="lg1" d="M306.977 102.325C250.464 102.325 204.652 56.5129 204.652 0C261.164 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lp" d="M306.976 176C306.976 119.487 261.164 73.6748 204.651 73.6748C204.651 130.187 250.464 176 306.976 176Z"/></svg><span class="nm">Clara Luisa <span class="nm2">Matthews</span></span></a><a class="bk" href="/#work"><span class="ar" aria-hidden="true">←</span>Work</a></div><main class="wrap" id="main"><div class="blk"><div class="eyebrow" data-p="blocks.0.text">Design Library · Research · 2025</div></div><div class="blk"><h1 data-p="blocks.1.text">Students mostly work alone, but say they want to <em>work together</em>.</h1></div><div class="blk"><p class="stand" data-p="blocks.2.text">Before the Design Library in Brooks Hall is renovated, the Design Council asked our Research Methods class how its main study lounge would need to change to stay useful to the students, faculty, and staff who rely on it. Our team focused on seating, investigating how it could better serve undergraduate students who come to the library to work in groups. We worked the question through observation, synthesis, and the creation of a method of our own. Three teams shared one survey, each with a different slice.</p></div><div class="blk"><div class="chips"><div class="r"><b data-p="blocks.3.rows.0.k">Team</b><div class="bb"><span data-p="blocks.3.rows.0.v.0">Willow Ahrens</span><span data-p="blocks.3.rows.0.v.1">Tushita Kaul</span><span data-p="blocks.3.rows.0.v.2">Diya Franklin</span></div></div><div class="r"><b data-p="blocks.3.rows.1.k">Partner</b><div class="bb"><span data-p="blocks.3.rows.1.v.0">NC State Design Library</span></div></div><div class="r"><b data-p="blocks.3.rows.2.k">Term</b><div class="bb"><span data-p="blocks.3.rows.2.v.0">Fall 2025</span></div></div><div class="r"><b data-p="blocks.3.rows.3.k">Design tools</b><div class="bb"><span data-p="blocks.3.rows.3.v.0">FigJam</span><span data-p="blocks.3.rows.3.v.1">Figma</span><span data-p="blocks.3.rows.3.v.2">Google Docs</span><span data-p="blocks.3.rows.3.v.3">Google Sheets</span></div></div></div></div><div class="blk"><figure class="wide edge"><div class="pane"><img src="/work/design-library/img/img-2ef15d69d5.png" alt="The chart titled Linking Work Modes, Furniture Preferences, and User Archetypes in the Design Library: A Survey-Driven Visualization. Bars show how many survey snippets were coded to each furniture type: chair 28, desk or study nook 21, table 17, modular or adaptable 7, sofa or soft seating 6, booth 3. Boxes link group work (Disciplined, Doubtful) and individual work (Overachiever, Procrastinator) to what each archetype seeks and its attitude."></div><figcaption data-p="blocks.4.cap">My visualized interpretation of our team's synthesis: survey snippets coded by furniture type, linked to work style and the four archetypes we developed in our new research method, Thematic Archetype Analysis.</figcaption></figure></div><div class="cstabs" role="tablist" aria-label="Case study sections"><button type="button" role="tab" id="cst0" aria-controls="csp0" aria-selected="false" tabindex="-1">The Problem</button><button type="button" role="tab" id="cst1" aria-controls="csp1" aria-selected="false" tabindex="-1">The Research</button><button type="button" role="tab" id="cst2" aria-controls="csp2" aria-selected="true" tabindex="0">The Outcome</button></div><div class="cspanel" role="tabpanel" id="csp0" aria-labelledby="cst0" tabindex="0" hidden=""><div class="secbody"><div class="blk"><h2 data-p="blocks.6.text">What we were asked</h2></div><div class="blk"><p data-p="blocks.7.text">For the undergraduates it serves in the College of Design, the lounge is a place to study and to work together, and the renovation is a chance to reshape it. We framed the problem this way: undergraduate students need more flexible and varied seating, because it would help them find a space for planned group work and thus foster connection and the exchange of knowledge.</p></div><div class="blk"><p data-p="blocks.8.text">To understand why the problem mattered, we asked “Five Whys,” and each answer pointed the same way:</p></div><div class="blk"><div class="stepsgrp"><ol class="steps tiles c5" role="list"><li><span class="n" aria-hidden="true">1</span><span class="t" data-p="blocks.9.items.0">Students differ in their needs from a study space.</span></li><li><span class="n" aria-hidden="true">2</span><span class="t" data-p="blocks.9.items.1">Their seating needs depend on whether they are alone or with others.</span></li><li><span class="n" aria-hidden="true">3</span><span class="t" data-p="blocks.9.items.2">Collaborative tasks necessitate open spaces for easy interaction.</span></li><li><span class="n" aria-hidden="true">4</span><span class="t" data-p="blocks.9.items.3">Convenient spatial access helps them build social connections and a sense of belonging.</span></li><li><span class="n" aria-hidden="true">5</span><span class="t" data-p="blocks.9.items.4">Feeling connected and comfortable makes students more likely to share ideas and learn from one another.</span></li></ol></div></div></div></div><div class="cspanel" role="tabpanel" id="csp1" aria-labelledby="cst1" tabindex="0" hidden=""><div class="secbody"><div class="blk"><div class="ev ev--flat"><div class="inner evflat"><div class="evblk"><p class="evsub" data-p="blocks.11.body.0.sub">Eleven weeks, two phases</p></div><div class="evblk"><div class="evimg"><img src="/work/design-library/img/img-8707cf667b.png" alt="A timeline of eleven weeks. The discovery phase, weeks 1 to 9, holds open coding, affinity clustering, fly-on-the-wall observations, empathy mapping, and an interview pilot, with thematic analysis, content analysis and journey mapping spanning several of those weeks. The definition phase, weeks 9 to 11, holds Pokemapping, Dynamic Selves, How Might We, 5 Whys, and Thematic Archetype Analysis." loading="lazy"></div></div><div class="evblk"><p data-p="blocks.11.body.2">Discovery covered roughly the first nine weeks and definition the last two.</p></div><div class="evblk"><p class="evsub" data-p="blocks.11.body.3.sub">Thematic analysis</p></div><div class="evblk"><div class="evimg"><img src="/work/design-library/img/img-14e07b429c.png" alt="An affinity board of survey responses grouped into themes under three meta-themes: Learning Resources, Learning Environment, and Wellbeing and Amenities." loading="lazy"></div></div><div class="evblk"><p data-p="blocks.11.body.5">Three rounds of open coding and affinity clustering grouped the responses into themes and meta-themes.</p></div><div class="evblk"><p class="evsub" data-p="blocks.11.body.6.sub">Fly-on-the-wall observations</p></div><div class="evblk"><div class="evimg"><img src="/work/design-library/img/img-97b1a8468e.png" alt="A floor plan of the Design Library in Brooks Hall, second floor, with three observed people (P1 to P3) and a staff member marked, and red lines tracing movement toward the library entrance." loading="lazy"></div></div><div class="evblk"><p data-p="blocks.11.body.8">The log places the people observed (P1, P2 and so on) and the staff on a plan of the library. Where someone moved, a red line traces the path.</p></div><div class="evblk"><p class="evsub" data-p="blocks.11.body.9.sub">Content analysis</p></div><div class="evblk"><div class="evimg"><img src="/work/design-library/img/img-1e7a7462d3.png" alt="A spreadsheet of survey responses to question 9, with columns for the raw response text, initial codes, code descriptions, the number of snippets, and the coder's initials." loading="lazy"></div></div><div class="evblk"><p data-p="blocks.11.body.11">Survey responses were restated in simpler terms, coded, and counted by snippet.</p></div><div class="evblk"><p class="evsub" data-p="blocks.11.body.12.sub">Journey map</p></div><div class="evblk"><button type="button" class="evimg evimg-zoom" data-svg="/work/design-library/design-library-journey-map.svg?v=d2987a05" data-alt="The top of the journey map for the Collaborative Learner archetype: a scenario, four stages (space identification, collaboration attempt, adaptation, and completion), a touchpoint for each, and the student's thoughts at each stage. The full map continues with an experience curve, pains, gains, and four objectives."><img src="/work/design-library/img/img-04b1ee3b73.jpg" alt="The top of the journey map for the Collaborative Learner archetype: a scenario, four stages (space identification, collaboration attempt, adaptation, and completion), a touchpoint for each, and the student's thoughts at each stage. The full map continues with an experience curve, pains, gains, and four objectives." loading="lazy"><span class="zoomtag">Click to explore +</span></button></div><div class="evblk"><p data-p="blocks.11.body.14">The journey follows a collaborative, comfort-seeking undergraduate through four stages of a visit.</p></div><div class="evblk"><p class="evsub" data-p="blocks.11.body.15.sub">Empathy map</p></div><div class="evblk"><button type="button" class="evimg evimg-zoom" data-svg="/work/design-library/design-library-empathy-map.svg?v=b2bb7464" data-alt="An empathy map in four quadrants, Says, Thinks, Does, and Feels, filled with notes from the team, followed by a row of pains and a row of gains."><img src="/work/design-library/img/img-97ae8c0e49.jpg" alt="An empathy map in four quadrants, Says, Thinks, Does, and Feels, filled with notes from the team, followed by a row of pains and a row of gains." loading="lazy"><span class="zoomtag">Click to explore +</span></button></div><div class="evblk"><p data-p="blocks.11.body.17">Survey quotes sit beside what the team inferred students were thinking.</p></div></div></div></div><div class="blk"><h2 data-p="blocks.12.text">team vs. independent work</h2></div><div class="blk"><p data-p="blocks.13.text">Our team (Willow Ahrens, Tushita Kaul, Diya Franklin,&nbsp;and I) completed a total of nine fly-on-the-wall sessions, three of them mine, on September 10, October 1, and October 6, 2025. I also coded survey responses for the content analysis, where my initials (CM) mark each row. Although we conducted all of the research methods as a team, we created independent visualizations and gave different recommendations in our reports.</p></div><div class="blk"><h2 data-p="blocks.14.text">limitations</h2></div><div class="blk"><p data-p="blocks.15.text">Several limits shaped what this study can claim. Most of the primary data, specifically the survey responses and pop-up interview transcripts, was provided to, rather than collected by, us, so we had no say over question design or how complete the answers were, and much of what we analyzed came without demographic detail. We drafted structured, semi-structured, and unstructured questions instead to show where future research could go. Our observations also covered only September and the first week of October, a short snapshot that can miss the swings that come with class schedules and deadlines.</p></div></div></div><div class="cspanel" role="tabpanel" id="csp2" aria-labelledby="cst2" tabindex="0"><div class="secbody"><div class="blk"><h2 data-p="blocks.17.text">What we found</h2></div><div class="blk"><p data-p="blocks.18.text">Most students use the library to study alone and in silence, even though it is meant to be a shared academic environment, and that quiet atmosphere was frequently cited as a barrier to planned group collaboration. Respondents nonetheless expressed strong interest in using it more for exactly that purpose.</p></div><div class="blk"><p data-p="blocks.19.text">Observation showed the same gap from the other side. Study carrels were the most frequently occupied seats, the central lounge was physically comfortable but underutilized because it offered little for academic work, and the designated meeting room often sat vacant. I recorded eleven people across my three sessions, and every one of them was working alone.</p></div><div class="blk"><p data-p="blocks.20.text">Of the survey snippets we coded by furniture type, chairs account for the most (28), then desks and study nooks (21), and tables (17), with modular or adaptable pieces (7), sofas and soft seating (6), and booths (3) trailing. Respondents asked in particular for more variety, including sofas, coffee tables, and extra desk options.</p></div><div class="blk"><div class="pull"><span data-p="blocks.21.text">“I feel like the seating options could be a bit more varied and strategically placed. I enjoy working in a quiet space, but often my work requires collaboration, so having both in different areas would be great.”</span><cite data-p="blocks.21.cite">Survey respondent</cite></div></div><div class="blk"><h2 data-p="blocks.22.text">a new method</h2></div><div class="blk"><p data-p="blocks.23.text">In the last weeks of the study we developed a method and named it:</p></div><div class="blk"><div class="stepsgrp"><p class="sname" data-p="blocks.24.name">Thematic Archetype Analysis</p><p class="slead thread" data-p="blocks.24.lead">It entails:</p><ol class="steps thread" role="list"><li><span class="n" aria-hidden="true">1</span><span class="t" data-p="blocks.24.items.0">Defining four user archetypes from documented behavior.</span></li><li><span class="n" aria-hidden="true">2</span><span class="t" data-p="blocks.24.items.1">Sorting each survey or interview response into one of the archetypes.</span></li><li><span class="n" aria-hidden="true">3</span><span class="t" data-p="blocks.24.items.2">Documenting which draws the most responses (a tie between two produces a new archetype that combines them).</span></li><li><span class="n" aria-hidden="true">4</span><span class="t" data-p="blocks.24.items.3">Charting how they differ.</span></li></ol></div></div><div class="blk"><figure class="wide"><div class="duo"><div class="pane"><button type="button" class="evimg evimg-zoom" data-svg="/work/design-library/thematic-archetype-mapping.svg?v=646b1020" data-alt="A circular map titled Thematic Archetype Mapping. The main archetype, Active Learner, sits above four quadrants labeled Procrastinator, Overachiever, Disciplined, and Doubtful, each holding the survey responses sorted into it on colored notes."><img src="/work/design-library/img/img-8d67ad7f6c.jpg" alt="A circular map titled Thematic Archetype Mapping. The main archetype, Active Learner, sits above four quadrants labeled Procrastinator, Overachiever, Disciplined, and Doubtful, each holding the survey responses sorted into it on colored notes."><span class="zoomtag">Click to explore +</span></button></div><div class="pane"><img src="/work/design-library/img/img-be23cfd329.webp" alt="The resulting archetype, The Restless Optimizer (Overachiever and Doubtful), with a description and three survey quotes."></div></div><figcaption data-p="blocks.25.cap">Survey responses sorted into the four archetypes, and the combined archetype that emerged.</figcaption></figure></div><div class="blk"><h2 data-p="blocks.26.text">What I recommended</h2></div><div class="blk"><p data-p="blocks.27.text">I prioritized three main goals for the renovation, all anchored around re-orienting the layout around group work while maintaining the library's calm atmosphere:</p></div><div class="blk"><div class="stepsgrp"><ol class="steps tiles c3" role="list"><li><span class="n" aria-hidden="true">1</span><span class="t" data-p="blocks.28.items.0">A wider range of functional seating, from workable sofas and armchairs to loungers with built-in desk features and pieces that rearrange.</span></li><li><span class="n" aria-hidden="true">2</span><span class="t" data-p="blocks.28.items.1">A meeting room opened up by removing its wall or replacing it with glass.</span></li><li><span class="n" aria-hidden="true">3</span><span class="t" data-p="blocks.28.items.2">Modular desks that can be clustered for group work.</span></li></ol></div></div><div class="blk"><p data-p="blocks.29.text">Lower in priority, I proposed pulling the central area toward the back of the room so it feels more sheltered, trading two of its four armchairs for a sofa and side tables, and replacing the computer workstations with adjustable-height desks that give students seated and standing options. Treadmill or bicycle desks closed the list as optional additions if space, budget, and interest allow.</p></div><div class="blk"><h2 data-p="blocks.30.text">future plans</h2></div><div class="blk"><p data-p="blocks.31.text">This project was one of many conducted within the NC State College of Design to inform the Design Library's renovation. Other departments that have contributed to the larger project thus far include: architecture and industrial design.</p></div></div></div></main></div>
+<script type="application/json" id="state">
+{
+ "title": "Design Library Research",
+ "blocks": [
+  {
+   "t": "eyebrow",
+   "text": "Design Library · Research · 2025"
+  },
+  {
+   "t": "h1",
+   "text": "Students mostly work alone, but say they want to \u003cem>work together\u003c/em>."
+  },
+  {
+   "t": "stand",
+   "text": "Before the Design Library in Brooks Hall is renovated, the Design Council asked our Research Methods class how its main study lounge would need to change to stay useful to the students, faculty, and staff who rely on it. Our team focused on seating, investigating how it could better serve undergraduate students who come to the library to work in groups. We worked the question through observation, synthesis, and the creation of a method of our own. Three teams shared one survey, each with a different slice."
+  },
+  {
+   "t": "chips",
+   "rows": [
+    {
+     "k": "Team",
+     "v": [
+      "Willow Ahrens",
+      "Tushita Kaul",
+      "Diya Franklin"
+     ]
+    },
+    {
+     "k": "Partner",
+     "v": [
+      "NC State Design Library"
+     ]
+    },
+    {
+     "k": "Term",
+     "v": [
+      "Fall 2025"
+     ]
+    },
+    {
+     "k": "Design tools",
+     "v": [
+      "FigJam",
+      "Figma",
+      "Google Docs",
+      "Google Sheets"
+     ]
+    }
+   ]
+  },
+  {
+   "t": "slot",
+   "k": "wide",
+   "text": "The chart titled Linking Work Modes, Furniture Preferences, and User Archetypes in the Design Library: A Survey-Driven Visualization. Bars show how many survey snippets were coded to each furniture type: chair 28, desk or study nook 21, table 17, modular or adaptable 7, sofa or soft seating 6, booth 3. Boxes link group work (Disciplined, Doubtful) and individual work (Overachiever, Procrastinator) to what each archetype seeks and its attitude.",
+   "cap": "My visualized interpretation of our team's synthesis: survey snippets coded by furniture type, linked to work style and the four archetypes we developed in our new research method, Thematic Archetype Analysis.",
+   "src": "/work/design-library/img/img-2ef15d69d5.png",
+   "edge": true
+  },
+  {
+   "t": "sec",
+   "title": "The Problem"
+  },
+  {
+   "t": "h2",
+   "text": "What we were asked"
+  },
+  {
+   "t": "p",
+   "text": "For the undergraduates it serves in the College of Design, the lounge is a place to study and to work together, and the renovation is a chance to reshape it. We framed the problem this way: undergraduate students need more flexible and varied seating, because it would help them find a space for planned group work and thus foster connection and the exchange of knowledge."
+  },
+  {
+   "t": "p",
+   "text": "To understand why the problem mattered, we asked “Five Whys,” and each answer pointed the same way:"
+  },
+  {
+   "t": "steps",
+   "v": "tiles",
+   "items": [
+    "Students differ in their needs from a study space.",
+    "Their seating needs depend on whether they are alone or with others.",
+    "Collaborative tasks necessitate open spaces for easy interaction.",
+    "Convenient spatial access helps them build social connections and a sense of belonging.",
+    "Feeling connected and comfortable makes students more likely to share ideas and learn from one another."
+   ]
+  },
+  {
+   "t": "sec",
+   "title": "The Research"
+  },
+  {
+   "t": "ev",
+   "title": "Research and synthesis",
+   "cnt": "7 ARTIFACTS",
+   "body": [
+    {
+     "sub": "Eleven weeks, two phases"
+    },
+    {
+     "img": "/work/design-library/img/img-8707cf667b.png",
+     "alt": "A timeline of eleven weeks. The discovery phase, weeks 1 to 9, holds open coding, affinity clustering, fly-on-the-wall observations, empathy mapping, and an interview pilot, with thematic analysis, content analysis and journey mapping spanning several of those weeks. The definition phase, weeks 9 to 11, holds Pokemapping, Dynamic Selves, How Might We, 5 Whys, and Thematic Archetype Analysis."
+    },
+    "Discovery covered roughly the first nine weeks and definition the last two.",
+    {
+     "sub": "Thematic analysis"
+    },
+    {
+     "img": "/work/design-library/img/img-14e07b429c.png",
+     "alt": "An affinity board of survey responses grouped into themes under three meta-themes: Learning Resources, Learning Environment, and Wellbeing and Amenities."
+    },
+    "Three rounds of open coding and affinity clustering grouped the responses into themes and meta-themes.",
+    {
+     "sub": "Fly-on-the-wall observations"
+    },
+    {
+     "img": "/work/design-library/img/img-97b1a8468e.png",
+     "alt": "A floor plan of the Design Library in Brooks Hall, second floor, with three observed people (P1 to P3) and a staff member marked, and red lines tracing movement toward the library entrance."
+    },
+    "The log places the people observed (P1, P2 and so on) and the staff on a plan of the library. Where someone moved, a red line traces the path.",
+    {
+     "sub": "Content analysis"
+    },
+    {
+     "img": "/work/design-library/img/img-1e7a7462d3.png",
+     "alt": "A spreadsheet of survey responses to question 9, with columns for the raw response text, initial codes, code descriptions, the number of snippets, and the coder's initials."
+    },
+    "Survey responses were restated in simpler terms, coded, and counted by snippet.",
+    {
+     "sub": "Journey map"
+    },
+    {
+     "img": "/work/design-library/img/img-04b1ee3b73.jpg",
+     "svg": "/work/design-library/design-library-journey-map.svg?v=d2987a05",
+     "alt": "The top of the journey map for the Collaborative Learner archetype: a scenario, four stages (space identification, collaboration attempt, adaptation, and completion), a touchpoint for each, and the student's thoughts at each stage. The full map continues with an experience curve, pains, gains, and four objectives."
+    },
+    "The journey follows a collaborative, comfort-seeking undergraduate through four stages of a visit.",
+    {
+     "sub": "Empathy map"
+    },
+    {
+     "img": "/work/design-library/img/img-97ae8c0e49.jpg",
+     "svg": "/work/design-library/design-library-empathy-map.svg?v=b2bb7464",
+     "alt": "An empathy map in four quadrants, Says, Thinks, Does, and Feels, filled with notes from the team, followed by a row of pains and a row of gains."
+    },
+    "Survey quotes sit beside what the team inferred students were thinking."
+   ],
+   "flat": true
+  },
+  {
+   "t": "h2",
+   "text": "team vs. independent work"
+  },
+  {
+   "t": "p",
+   "text": "Our team (Willow Ahrens, Tushita Kaul, Diya Franklin, and I) completed a total of nine fly-on-the-wall sessions, three of them mine, on September 10, October 1, and October 6, 2025. I also coded survey responses for the content analysis, where my initials (CM) mark each row. Although we conducted all of the research methods as a team, we created independent visualizations and gave different recommendations in our reports."
+  },
+  {
+   "t": "h2",
+   "text": "limitations"
+  },
+  {
+   "t": "p",
+   "text": "Several limits shaped what this study can claim. Most of the primary data, specifically the survey responses and pop-up interview transcripts, was provided to, rather than collected by, us, so we had no say over question design or how complete the answers were, and much of what we analyzed came without demographic detail. We drafted structured, semi-structured, and unstructured questions instead to show where future research could go. Our observations also covered only September and the first week of October, a short snapshot that can miss the swings that come with class schedules and deadlines."
+  },
+  {
+   "t": "sec",
+   "title": "The Outcome",
+   "open": true
+  },
+  {
+   "t": "h2",
+   "text": "What we found"
+  },
+  {
+   "t": "p",
+   "text": "Most students use the library to study alone and in silence, even though it is meant to be a shared academic environment, and that quiet atmosphere was frequently cited as a barrier to planned group collaboration. Respondents nonetheless expressed strong interest in using it more for exactly that purpose."
+  },
+  {
+   "t": "p",
+   "text": "Observation showed the same gap from the other side. Study carrels were the most frequently occupied seats, the central lounge was physically comfortable but underutilized because it offered little for academic work, and the designated meeting room often sat vacant. I recorded eleven people across my three sessions, and every one of them was working alone."
+  },
+  {
+   "t": "p",
+   "text": "Of the survey snippets we coded by furniture type, chairs account for the most (28), then desks and study nooks (21), and tables (17), with modular or adaptable pieces (7), sofas and soft seating (6), and booths (3) trailing. Respondents asked in particular for more variety, including sofas, coffee tables, and extra desk options."
+  },
+  {
+   "t": "pull",
+   "text": "“I feel like the seating options could be a bit more varied and strategically placed. I enjoy working in a quiet space, but often my work requires collaboration, so having both in different areas would be great.”",
+   "cite": "Survey respondent"
+  },
+  {
+   "t": "h2",
+   "text": "a new method"
+  },
+  {
+   "t": "p",
+   "text": "In the last weeks of the study we developed a method and named it:"
+  },
+  {
+   "t": "steps",
+   "v": "thread",
+   "items": [
+    "Defining four user archetypes from documented behavior.",
+    "Sorting each survey or interview response into one of the archetypes.",
+    "Documenting which draws the most responses (a tie between two produces a new archetype that combines them).",
+    "Charting how they differ."
+   ],
+   "name": "Thematic Archetype Analysis",
+   "lead": "It entails:"
+  },
+  {
+   "t": "slot",
+   "k": "duo",
+   "text": "The Thematic Archetype Mapping and the resulting archetype, the Restless Optimizer.",
+   "text1": "A circular map titled Thematic Archetype Mapping. The main archetype, Active Learner, sits above four quadrants labeled Procrastinator, Overachiever, Disciplined, and Doubtful, each holding the survey responses sorted into it on colored notes.",
+   "text2": "The resulting archetype, The Restless Optimizer (Overachiever and Doubtful), with a description and three survey quotes.",
+   "cap": "Survey responses sorted into the four archetypes, and the combined archetype that emerged.",
+   "src": "/work/design-library/img/img-8d67ad7f6c.jpg",
+   "src2": "/work/design-library/img/img-be23cfd329.webp",
+   "svg": "/work/design-library/thematic-archetype-mapping.svg?v=646b1020"
+  },
+  {
+   "t": "h2",
+   "text": "What I recommended"
+  },
+  {
+   "t": "p",
+   "text": "I prioritized three main goals for the renovation, all anchored around re-orienting the layout around group work while maintaining the library's calm atmosphere:"
+  },
+  {
+   "t": "steps",
+   "v": "tiles",
+   "items": [
+    "A wider range of functional seating, from workable sofas and armchairs to loungers with built-in desk features and pieces that rearrange.",
+    "A meeting room opened up by removing its wall or replacing it with glass.",
+    "Modular desks that can be clustered for group work."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Lower in priority, I proposed pulling the central area toward the back of the room so it feels more sheltered, trading two of its four armchairs for a sofa and side tables, and replacing the computer workstations with adjustable-height desks that give students seated and standing options. Treadmill or bicycle desks closed the list as optional additions if space, budget, and interest allow."
+  },
+  {
+   "t": "h2",
+   "text": "future plans"
+  },
+  {
+   "t": "p",
+   "text": "This project was one of many conducted within the NC State College of Design to inform the Design Library's renovation. Other departments that have contributed to the larger project thus far include: architecture and industrial design."
+  }
+ ]
+}
+</script>
+<script id="app">
+(function () {
+  var S, root = document.getElementById('root'), dirty = false, editing = false, ns = null, saving = false;
+
+  var FONTS =
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300..800;1,400&family=Poppins:wght@500;600&display=swap">\n';
+
+  var MARK =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.302 352" role="img" aria-label="Clara Matthews mark">' +
+    '<title>Clara Matthews mark</title>' +
+    '<path class="lg1" d="M102.326 249.675C158.838 249.675 204.651 295.487 204.651 352C148.138 352 102.326 306.187 102.326 249.675Z"/><path class="lg1" d="M102.325 176C102.325 232.513 56.5129 278.325 0 278.325C0.000210287 221.813 45.8126 176 102.325 176Z"/><path class="lg2" d="M102.326 102.325C158.838 102.325 204.651 56.5129 204.651 0C148.138 0.000210287 102.326 45.8126 102.326 102.325Z"/><path class="lr" d="M102.326 176C102.326 119.487 148.138 73.6748 204.651 73.6748C204.651 130.187 158.839 176 102.326 176Z"/><path class="lg1" d="M306.977 249.675C363.49 249.675 409.302 295.487 409.302 352C352.789 352 306.977 306.187 306.977 249.675Z"/><path class="lg1" d="M306.977 176C306.977 119.487 352.789 73.6748 409.302 73.6748C409.302 130.187 363.49 176 306.977 176Z"/><path class="lg2" d="M306.977 102.325C363.49 102.325 409.302 56.5129 409.302 0C352.789 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lr" d="M306.976 176C306.976 232.513 261.164 278.325 204.651 278.325C204.651 221.813 250.464 176 306.976 176Z"/><path class="lg2" d="M102.326 249.675C45.8127 249.675 0.00038147 295.487 0.00038147 352C56.5129 352 102.325 306.187 102.326 249.675Z"/><path class="lg2" d="M102.325 176C102.325 119.487 56.5129 73.6748 0 73.6748C0.000210287 130.187 45.8126 176 102.325 176Z"/><path class="lg1" d="M102.326 102.325C45.8127 102.325 0.00038147 56.5129 0.00038147 0C56.5129 0.000210287 102.325 45.8126 102.326 102.325Z"/><path class="lp" d="M102.326 176C102.326 232.513 148.138 278.325 204.651 278.325C204.651 221.813 158.839 176 102.326 176Z"/><path class="lg2" d="M306.977 249.675C250.464 249.675 204.652 295.487 204.652 352C261.164 352 306.977 306.187 306.977 249.675Z"/><path class="lg2" d="M306.977 176C306.977 232.513 352.789 278.325 409.302 278.325C409.302 221.813 363.49 176 306.977 176Z"/><path class="lg1" d="M306.977 102.325C250.464 102.325 204.652 56.5129 204.652 0C261.164 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lp" d="M306.976 176C306.976 119.487 261.164 73.6748 204.651 73.6748C204.651 130.187 250.464 176 306.976 176Z"/>' +
+    '' +
+    '</svg>';
+
+  try { S = JSON.parse(document.getElementById('state').textContent); }
+  catch (e) { root.innerHTML = '<div class="wrap"><p>Could not read page content.</p></div>'; return; }
+
+  /* ---------- render ---------- */
+
+  function ed(path, tag, cls, html) {
+    return '<' + tag + (cls ? ' class="' + cls + '"' : '') + ' data-p="' + path + '">' + html + '</' + tag + '>';
+  }
+
+  function ctl(i) { return ''; }
+  function ctl_unused(i) {
+    var n = S.blocks.length;
+    return '<div class="blkctl" contenteditable="false">' +
+      '<button type="button" data-up="' + i + '"' + (i === 0 ? ' disabled' : '') +
+        ' title="Move up">&uarr;</button>' +
+      '<button type="button" data-down="' + i + '"' + (i === n - 1 ? ' disabled' : '') +
+        ' title="Move down">&darr;</button>' +
+      '<button type="button" data-add="' + i + '" title="Insert a block below">+</button>' +
+      '<button type="button" data-del="' + i + '" title="Delete this block">&times;</button>' +
+      '</div>';
+  }
+
+  function evctl(ei, j) { return ''; }
+  function evctl_unused(ei, j) {
+    var n = S.blocks[ei].body.length;
+    return '<div class="evctl" contenteditable="false">' +
+      '<button type="button" data-evup="' + ei + ':' + j + '"' + (j === 0 ? ' disabled' : '') +
+        ' title="Move up">&uarr;</button>' +
+      '<button type="button" data-evdown="' + ei + ':' + j + '"' + (j === n - 1 ? ' disabled' : '') +
+        ' title="Move down">&darr;</button>' +
+      '<button type="button" data-evadd="' + ei + ':' + j + '" title="Insert below">+</button>' +
+      '<button type="button" data-evdel="' + ei + ':' + j + '" title="Delete">&times;</button>' +
+      '</div>';
+  }
+
+  function pane(src, alt, isVideo) {
+    if (!src) return '<div class="pane"><div class="ph"><span>' + alt + '</span></div></div>';
+    var inner = (isVideo && /\.(mp4|webm)(\?|$)/i.test(src))
+      ? '<video src="' + src + '" autoplay muted loop playsinline aria-label="' + alt + '"></video>'
+      : '<img src="' + src + '" alt="' + alt + '">';
+    return '<div class="pane">' + inner + (isVideo ? '<span class="tagv">Loop</span>' : '') + '</div>';
+  }
+
+  function zoomPane(src, alt, svg) {
+    return '<div class="pane"><button type="button" class="evimg evimg-zoom" data-svg="' + svg + '" data-alt="' + alt + '">' +
+      '<img src="' + src + '" alt="' + alt + '"><span class="zoomtag">Click to explore &#43;</span></button></div>';
+  }
+
+  function block(b, i) {
+    var p = 'blocks.' + i, h = '';
+    if (b.t === 'eyebrow') h = ed(p + '.text', 'div', 'eyebrow', b.text);
+    else if (b.t === 'h1') h = ed(p + '.text', 'h1', '', b.text);
+    else if (b.t === 'stand') h = ed(p + '.text', 'p', 'stand', b.text);
+    else if (b.t === 'slot') {
+      var wide = b.k !== 'pair';
+      var panes = b.k === 'duo'
+        ? '<div class="duo">' + zoomPane(b.src, b.text1 || b.text, b.svg) + pane(b.src2, b.text2 || b.text) + '</div>'
+        : wide ? pane(b.src, b.text)
+        : '<div class="pair">' + pane(b.src, b.text1 || b.text, b.vid1) +
+          pane(b.src2, b.text2 || b.text) + '</div>';
+      h = '<figure class="' + (wide ? 'wide' : '') + (b.edge ? ' edge' : '') + '">' + panes +
+          ed(p + '.cap', 'figcaption', '', b.cap || '') + (b.link ? '<p class="golink"><a href="' + b.link +
+          '" target="_blank" rel="noopener noreferrer">' + (b.linklabel || 'View the original') + '</a></p>' : '') + '</figure>';
+    }
+    else if (b.t === 'news') {
+      h = '<div class="news">';
+      for (var nw = 0; nw < b.items.length; nw++) { var it = b.items[nw];
+        h += '<a class="newsitem" href="' + it.href + '" target="_blank" rel="noopener noreferrer"><img src="' + it.img +
+          '" alt="' + it.alt + '" loading="lazy"><span class="nt"><span class="nk">' + it.kicker + '</span><span class="nc">' +
+          it.cap + '</span><span class="ncta">' + it.cta + ' <span aria-hidden="true">&#8599;</span></span></span></a>'; }
+      h += '</div>';
+    }
+    else if (b.t === 'h2') h = ed(p + '.text', 'h2', '', b.text);
+    else if (b.t === 'p') h = ed(p + '.text', 'p', '', b.text);
+    else if (b.t === 'note') h = ed(p + '.text', 'div', 'note', b.text);
+    else if (b.t === 'pull') {
+      h = '<div class="pull">' + ed(p + '.text', 'span', '', b.text) +
+          (b.cite ? ed(p + '.cite', 'cite', '', b.cite) : '') + '</div>';
+    } else if (b.t === 'ev') {
+      var body = '';
+      for (var j = 0; j < b.body.length; j++) {
+        var item = b.body[j], itemHtml = '';
+        if (item && item.persona) {
+          var per = item.persona, fh = '';
+          for (var k = 0; k < per.fields.length; k++) {
+            fh += '<p class="pf"><b>' + per.fields[k].k + '</b><span>' + per.fields[k].v + '</span></p>';
+          }
+          itemHtml = '<div class="persona"><div class="ph-pill"><img src="' + per.img +
+            '" alt="' + per.alt + '" loading="lazy"></div><div class="info"><div class="who"><b>' +
+            per.name + '</b> &mdash; ' + per.role + '<span class="org">' + per.org +
+            '</span></div>' + fh + '</div></div>';
+        } else if (item && item.img) {
+          if (item.svg) {
+            itemHtml = '<button type="button" class="evimg evimg-zoom" data-svg="' + item.svg +
+              '" data-alt="' + (item.alt || '') + '"><img src="' + item.img + '" alt="' + (item.alt || '') +
+              '" loading="lazy"><span class="zoomtag">Click to explore &#43;</span></button>';
+          } else {
+            itemHtml = '<div class="evimg"><img src="' + item.img + '" alt="' + (item.alt || '') + '" loading="lazy"></div>';
+          }
+        } else if (item && typeof item === 'object' && 'sub' in item) {
+          itemHtml = ed(p + '.body.' + j + '.sub', 'p', 'evsub', item.sub);
+        } else if (item && item.pills) {
+          var pr = '';
+          for (var pk = 0; pk < item.pills.length; pk++) {
+            pr += '<div class="pill">' +
+              ed(p + '.body.' + j + '.pills.' + pk + '.k', 'b', '', item.pills[pk].k) +
+              ed(p + '.body.' + j + '.pills.' + pk + '.v', 'span', '', item.pills[pk].v) +
+              '</div>';
+          }
+          itemHtml = '<div class="pills">' + pr + '</div>';
+        } else {
+          itemHtml = ed(p + '.body.' + j, 'p', '', item);
+        }
+        body += '<div class="evblk">' + evctl(i, j) + itemHtml + '</div>';
+      }
+      h = b.flat ? '<div class="ev ev--flat"><div class="inner evflat">' + body + '</div></div>' : '<details class="ev"' + (b.open ? ' open' : '') + '><summary><span class="tick" contenteditable="false"></span>' +
+          ed(p + '.title', 'span', '', b.title) +
+          (b.cnt ? ed(p + '.cnt', 'span', 'cnt', b.cnt) : '') +
+          '</summary><div class="inner">' + body + '</div></details>';
+    } else if (b.t === 'video') {
+      h = '<figure class="wide vid">' +
+          '<div class="frame">' +
+          (b.poster ? '<img class="post" src="' + b.poster + '" alt="' + b.label + '">' : '') +
+          '<iframe src="https://www.youtube-nocookie.com/embed/' + b.yt +
+          '?rel=0&cc_load_policy=1&cc_lang_pref=en" title="' + b.label + '" loading="lazy" ' +
+          'allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" ' +
+          'allowfullscreen></iframe></div>' +
+          ed(p + '.cap', 'figcaption', '', b.cap) +
+          '<p class="alt" contenteditable="false"><a href="https://www.youtube.com/watch?v=' +
+          b.yt + '" target="_blank" rel="noopener noreferrer">Open on YouTube</a> &middot; ' +
+          b.len + ' &middot; captions available</p>' +
+          '</figure>';
+    } else if (b.t === 'steps') {
+      var sl = '';
+      for (var sk = 0; sk < b.items.length; sk++) {
+        var it = b.items[sk], body = (it && typeof it === 'object')
+          ? '<span class="t">' + ed(p + '.items.' + sk + '.k', 'b', 'sk', it.k) + ed(p + '.items.' + sk + '.v', 'span', 'sv', it.v) + '</span>'
+          : ed(p + '.items.' + sk, 'span', 't', it);
+        sl += '<li>' + (b.num === false ? '' : '<span class="n" aria-hidden="true">' + (sk + 1) + '</span>') + body + '</li>';
+      }
+      var shead = '';
+      if (b.name) shead += ed(p + '.name', 'p', 'sname', b.name);
+      if (b.lead) shead += ed(p + '.lead', 'p', 'slead' + (b.v === 'thread' ? ' thread' : ''), b.lead);
+      h = '<div class="stepsgrp">' + shead + '<ol class="steps ' + (b.v === 'thread' ? 'thread' : 'tiles c' + Math.min(b.items.length, 5)) + (b.num === false ? ' plain' : '') + '" role="list">' + sl + '</ol></div>';
+    } else if (b.t === 'klist') {
+      var kr = '';
+      for (var y = 0; y < b.rows.length; y++) {
+        kr += '<div class="r">' + ed(p + '.rows.' + y + '.k', 'b', '', b.rows[y].k) +
+              ed(p + '.rows.' + y + '.v', 'span', '', b.rows[y].v) + '</div>';
+      }
+      h = '<div class="klist">' + kr + '</div>';
+    } else if (b.t === 'flow') {
+      var fs = '';
+      for (var z = 0; z < b.steps.length; z++) {
+        if (z) fs += '<span class="ar" aria-hidden="true">&rarr;</span>';
+        fs += '<span class="st' + (b.steps[z].on ? ' on' : '') + '">' + b.steps[z].t + '</span>';
+        if (b.steps[z].on) fs += '<span class="me">' + (b.note || '') + '</span>';
+      }
+      h = '<div class="flow">' + fs + '</div>';
+    } else if (b.t === 'sum') {
+      var cells = '';
+      for (var q = 0; q < b.rows.length; q++) {
+        cells += '<div>' + ed(p + '.rows.' + q + '.k', 'div', 'k', b.rows[q].k) +
+                 ed(p + '.rows.' + q + '.v', 'div', 'v', b.rows[q].v) + '</div>';
+      }
+      h = '<div class="sum">' + cells + '</div>';
+    } else if (b.t === 'chips') {
+      var cr = '';
+      for (var c = 0; c < b.rows.length; c++) {
+        var bb = '';
+        for (var d = 0; d < b.rows[c].v.length; d++) {
+          bb += ed(p + '.rows.' + c + '.v.' + d, 'span', '', b.rows[c].v[d]);
+        }
+        cr += '<div class="r">' + ed(p + '.rows.' + c + '.k', 'b', '', b.rows[c].k) +
+              '<div class="bb">' + bb + '</div></div>';
+      }
+      h = '<div class="chips">' + cr + '</div>';
+    } else if (b.t === 'spec') {
+      var rows = '';
+      for (var k = 0; k < b.rows.length; k++) {
+        rows += '<div class="r">' + ed(p + '.rows.' + k + '.k', 'b', '', b.rows[k].k) +
+                ed(p + '.rows.' + k + '.v', 'span', '', b.rows[k].v) + '</div>';
+      }
+      h = '<div class="spec">' + rows + '</div>';
+    }
+    return '<div class="blk">' + ctl(i) + h + '</div>';
+  }
+
+  function render() {
+    var out = '<a class="skip" href="#main">Skip to content</a>' +
+      '<div class="topbar"><a class="home" href="/" aria-label=\"Clara Luisa Matthews, home\">' + MARK +
+      '<span class="nm">Clara Luisa <span class="nm2">Matthews</span></span></a>' +
+      '<a class="bk" href="/#work"><span class="ar" aria-hidden="true">&larr;</span>Work</a>' +
+      '</div><main class="wrap" id="main">';
+    var i = 0, n = S.blocks.length;
+    var inSec = false, tabs = [], cur = 0;
+    while (i < n) {
+      if (S.blocks[i].t === 'sec') {
+        if (!tabs.length) out += '<!--cstabs-->';
+        var tk = tabs.length; tabs.push(S.blocks[i].title); if (S.blocks[i].open) cur = tk;
+        out += (inSec ? '</div></div>' : '') + '<div class="cspanel" role="tabpanel" id="csp' + tk +
+          '" aria-labelledby="cst' + tk + '" tabindex="0"' + (S.blocks[i].open ? '' : ' hidden') + '><div class="secbody">';
+        inSec = true; i++; continue;
+      }
+      if (inSec || S.blocks[i].t !== 'h2') { out += block(S.blocks[i], i); i++; continue; }
+      out += block(S.blocks[i], i); i++;
+      var items = [];
+      while (i < n && S.blocks[i].t !== 'h2') { items.push(i); i++; }
+      var lede = -1, q;
+      for (q = 0; q < items.length; q++) { if (S.blocks[items[q]].t === 'p') { lede = q; break; } }
+      if (lede < 0) { for (q = 0; q < items.length; q++) out += block(S.blocks[items[q]], items[q]); continue; }
+      /* the lede, plus anything that must never hide behind a click */
+      var shown = [], rest = [];
+      for (q = 0; q < items.length; q++) {
+        var bq = S.blocks[items[q]];
+        /* prose and the lists that replaced prose may collapse; media and page
+           furniture never do */
+        var always = bq.t === 'video' || bq.t === 'spec' || bq.t === 'note' ||
+                     (bq.t === 'slot' && bq.src);
+        if (bq.t === 'steps' && q > 0) (shown.indexOf(items[q - 1]) >= 0 ? shown : rest).push(items[q]);
+        else if (q <= lede || always) shown.push(items[q]);
+        else rest.push(items[q]);
+      }
+      for (q = 0; q < shown.length; q++) out += block(S.blocks[shown[q]], shown[q]);
+      if (!rest.length) continue;
+      var np = 0, dots = '', sid = 'sec' + items[0];
+      for (q = 0; q < rest.length; q++) if (S.blocks[rest[q]].t === 'p') np++;
+      for (q = 0; q < np; q++) dots += '<i></i>';
+      out += '<button class="more" type="button" aria-expanded="false" aria-controls="' + sid +
+        '" data-more="' + sid + '"><span class="tick" contenteditable="false"></span>' +
+        '<span class="ln"></span><span class="dots" aria-hidden="true">' + dots + '</span>' +
+        '<span class="sr">Show ' + np + ' more</span></button>' +
+        '<div class="rest" id="' + sid + '"><div class="in2">';
+      for (q = 0; q < rest.length; q++) out += block(S.blocks[rest[q]], rest[q]);
+      out += '</div></div>';
+    }
+    if (inSec) out += '</div></div>';
+    if (tabs.length) {
+      var tl = '<div class="cstabs" role="tablist" aria-label="Case study sections">';
+      for (var tq = 0; tq < tabs.length; tq++) tl += '<button type="button" role="tab" id="cst' + tq + '" aria-controls="csp' + tq +
+        '" aria-selected="' + (tq === cur) + '" tabindex="' + (tq === cur ? 0 : -1) + '">' + tabs[tq] + '</button>';
+      out = out.replace('<!--cstabs-->', tl + '</div>');
+    }
+    root.innerHTML = out + '</main>';
+    restore();
+  }
+
+  function setOpen(btn, open) {
+    var r = document.getElementById(btn.getAttribute('aria-controls'));
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (r) r.classList.toggle('open', open);
+    try { localStorage.setItem('cm.' + btn.getAttribute('data-more'), open ? '1' : '0'); } catch (e) {}
+  }
+
+  function restore() {
+    var bs = root.querySelectorAll('button.more'), k;
+    for (k = 0; k < bs.length; k++) {
+      var v = null;
+      try { v = localStorage.getItem('cm.' + bs[k].getAttribute('data-more')); } catch (e) {}
+      if (v === '1') setOpen(bs[k], true);
+    }
+  }
+
+  /* ---------- read back ---------- */
+
+  var OK = { B: 1, I: 1, EM: 1, STRONG: 1, SPAN: 1, CITE: 1, A: 1 };
+
+  function clean(node) {
+    var out = '', n, t, cls;
+    for (n = node.firstChild; n; n = n.nextSibling) {
+      if (n.nodeType === 3) {
+        out += n.nodeValue.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      } else if (n.nodeType === 1) {
+        t = n.tagName;
+        if (t === 'BR') { out += '<br>'; continue; }
+        if (t === 'DIV' || t === 'P') { out += (out ? ' ' : '') + clean(n); continue; }
+        if (!OK[t]) { out += clean(n); continue; }
+        cls = n.getAttribute('class');
+        if (t === 'SPAN' && cls !== 'todo') { out += clean(n); continue; }
+        t = t.toLowerCase();
+        out += '<' + t + (cls ? ' class="' + cls + '"' : '') + '>' + clean(n) + '</' + t + '>';
+      }
+    }
+    return out;
+  }
+
+  function setPath(path, val) {
+    var ps = path.split('.'), o = S, i;
+    for (i = 0; i < ps.length - 1; i++) o = o[ps[i]];
+    o[ps[ps.length - 1]] = val;
+  }
+
+  function commit() {
+    var nodes = root.querySelectorAll('[data-p]');
+    for (var i = 0; i < nodes.length; i++) {
+      setPath(nodes[i].getAttribute('data-p'), clean(nodes[i]).trim());
+    }
+  }
+
+  /* ---------- regenerate the document from state ---------- */
+
+  function docHTML() {
+    var css = document.getElementById('css').textContent.trim();
+    var app = document.getElementById('app').textContent.trim();
+    var json = JSON.stringify(S, null, 1).replace(/</g, '\\u003c');
+    return '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
+      '<meta name="viewport" content="width=device-width,initial-scale=1">\n' +
+      '<title>' + S.title + '</title>\n' + FONTS +
+      '<style id="css">' + css + '</style>\n</head>\n<body>\n' +
+      '<div id="root"></div>\n' +
+      '<script type="application/json" id="state">\n' + json + '\n<\/script>\n' +
+      '<script id="app">\n' + app + '\n<\/script>\n</body>\n</html>\n';
+  }
+
+  function pickTab(t, focus) {
+    var all = root.querySelectorAll('.cstabs [role="tab"]'), k;
+    for (k = 0; k < all.length; k++) {
+      var on = all[k] === t, pn = document.getElementById(all[k].getAttribute('aria-controls'));
+      all[k].setAttribute('aria-selected', on ? 'true' : 'false'); all[k].tabIndex = on ? 0 : -1;
+      if (pn) pn.hidden = !on;
+    }
+    if (focus) t.focus();
+  }
+  root.addEventListener('click', function (e) {
+    var t = e.target.closest ? e.target.closest('.cstabs [role="tab"]') : null;
+    if (t) pickTab(t);
+  });
+  root.addEventListener('keydown', function (e) {
+    var t = e.target.closest ? e.target.closest('.cstabs [role="tab"]') : null;
+    if (!t || (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'Home' && e.key !== 'End')) return;
+    var all = [].slice.call(root.querySelectorAll('.cstabs [role="tab"]')), i = all.indexOf(t), n = all.length;
+    i = e.key === 'Home' ? 0 : e.key === 'End' ? n - 1 : (i + (e.key === 'ArrowRight' ? 1 : n - 1)) % n;
+    pickTab(all[i], true); e.preventDefault();
+  });
+
+  root.addEventListener('click', function (e) {
+    var mb = e.target.closest ? e.target.closest('button.more') : null;
+    if (mb) setOpen(mb, mb.getAttribute('aria-expanded') !== 'true');
+  });
+
+  /* The artifact preview blocks third-party frames. Production embeds normally; here we
+     detect the block and show a working play affordance instead of an empty box. */
+  function videoFallback() {
+    var frames = root.querySelectorAll('.vid .frame'), i;
+    for (i = 0; i < frames.length; i++) {
+      var fr = frames[i];
+      if (fr.dataset.fb) continue;
+      fr.dataset.fb = '1';
+      var fig = fr.closest('figure');
+      var a = fig ? fig.querySelector('.alt a') : null;
+      var href = a ? a.getAttribute('href') : 'https://www.youtube.com';
+      var post = fr.querySelector('.post');
+      fr.innerHTML = (post ? post.outerHTML : '<div class="ph"></div>') +
+        '<a class="fb" href="' + href +
+        '" target="_blank" rel="noopener noreferrer">' +
+        '<span class="pbtn" aria-hidden="true"></span>' +
+        '<span class="sr">Watch the scenario walkthrough on YouTube</span></a>' +
+        '<span class="fbnote">Preview cannot embed video &middot; opens on YouTube</span>';
+    }
+  }
+  document.addEventListener('securitypolicyviolation', function (e) {
+    if (/youtube/i.test(e.blockedURI || '')) videoFallback();
+  });
+  setTimeout(function () {
+    var f = root.querySelector('.vid .frame iframe');
+    if (!f) return;
+    var blocked = false;
+    try { if (f.contentDocument) blocked = true; } catch (err) { blocked = false; }
+    if (blocked) videoFallback();
+  }, 2000);
+
+  /* scroll to top */
+  (function () {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'totop';
+    b.setAttribute('aria-label', 'Scroll to top');
+    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+      'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+    document.body.appendChild(b);
+    var tick = false, de = document.documentElement;
+    function mark() {
+      if (window.scrollY > 300) de.setAttribute('data-up', '');
+      else de.removeAttribute('data-up');
+      tick = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!tick) { tick = true; window.requestAnimationFrame(mark); }
+    }, { passive: true });
+    mark();
+    b.addEventListener('click', function () {
+      var r = window.matchMedia &&
+              window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: r ? 'auto' : 'smooth' });
+    });
+  })();
+
+  /* ---------- zoomable SVG viewer (journey map) ---------- */
+  (function () {
+    var modal = document.createElement('div');
+    modal.className = 'jmap-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.innerHTML =
+      '<div class="jmap-bar"><span class="jmap-label"></span><div class="jmap-tools">' +
+      '<button type="button" data-z="out" aria-label="Zoom out">&minus;</button>' +
+      '<button type="button" data-z="reset">Reset</button>' +
+      '<button type="button" data-z="in" aria-label="Zoom in">&#43;</button>' +
+      '<button type="button" class="jmap-close" aria-label="Close">&times;</button>' +
+      '</div></div><div class="jmap-stage"><div class="jmap-inner"></div></div>' +
+      '<p class="jmap-status" role="status"></p>';
+    document.body.appendChild(modal);
+
+    var stage = modal.querySelector('.jmap-stage');
+    var inner = modal.querySelector('.jmap-inner');
+    var status = modal.querySelector('.jmap-status');
+    var label = modal.querySelector('.jmap-label');
+    var closeBtn = modal.querySelector('.jmap-close');
+    var scale = 1, baseScale = 1, tx = 0, ty = 0, currentVB = null;
+    var dragging = false, dragStart = null, pinchStart = null, lastFocus = null;
+
+    function apply() {
+      inner.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + scale + ')';
+    }
+    function clampScale(s) { return Math.max(baseScale * 0.5, Math.min(baseScale * 8, s)); }
+    function fitToStage(vb) {
+      var parts = vb.split(/\s+/).map(Number);
+      var rect = stage.getBoundingClientRect();
+      baseScale = Math.min(rect.width / parts[2], rect.height / parts[3]) * 0.94;
+      scale = baseScale; tx = 0; ty = 0;
+      apply();
+    }
+    function open(url, alt) {
+      lastFocus = document.activeElement;
+      modal.classList.add('on');
+      document.body.style.overflow = 'hidden';
+      label.textContent = alt || '';
+      closeBtn.focus();
+      status.textContent = 'Loading the map\u2026';
+      inner.innerHTML = '';
+      fetch(url).then(function (r) { if (!r.ok) throw new Error('map'); return r.text(); }).then(function (txt) {
+        var svg = new DOMParser().parseFromString(txt, 'image/svg+xml').documentElement;
+        if (!svg || svg.nodeName.toLowerCase() !== 'svg') throw new Error('map');
+        svg = document.importNode(svg, true);
+        var vb = svg.getAttribute('viewBox') || '0 0 1000 1000';
+        var parts = vb.split(/\s+/).map(Number);
+        svg.removeAttribute('width'); svg.removeAttribute('height');
+        svg.style.width = parts[2] + 'px'; svg.style.height = parts[3] + 'px';
+        inner.appendChild(svg);
+        currentVB = vb;
+        fitToStage(currentVB);
+        status.textContent = '';
+      })['catch'](function () { status.textContent = 'Could not load the map.'; });
+    }
+    function close() {
+      modal.classList.remove('on');
+      document.body.style.overflow = '';
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('.evimg-zoom') : null;
+      if (btn) open(btn.getAttribute('data-svg'), btn.getAttribute('data-alt'));
+    });
+    closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!modal.classList.contains('on')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === '+' || e.key === '=') { scale = clampScale(scale * 1.2); apply(); }
+      else if (e.key === '-') { scale = clampScale(scale / 1.2); apply(); }
+    });
+    modal.querySelector('.jmap-tools').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-z]');
+      if (!b) return;
+      var z = b.getAttribute('data-z');
+      if (z === 'in') scale = clampScale(scale * 1.3);
+      else if (z === 'out') scale = clampScale(scale / 1.3);
+      else { scale = baseScale; tx = 0; ty = 0; }
+      apply();
+    });
+    stage.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      scale = clampScale(scale * (e.deltaY < 0 ? 1.12 : 1 / 1.12));
+      apply();
+    }, { passive: false });
+    stage.addEventListener('mousedown', function (e) {
+      dragging = true; dragStart = { x: e.clientX - tx, y: e.clientY - ty };
+      stage.classList.add('grabbing');
+    });
+    window.addEventListener('mousemove', function (e) {
+      if (!dragging) return;
+      tx = e.clientX - dragStart.x; ty = e.clientY - dragStart.y;
+      apply();
+    });
+    window.addEventListener('mouseup', function () { dragging = false; stage.classList.remove('grabbing'); });
+    function dist(a, b) { return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); }
+    stage.addEventListener('touchstart', function (e) {
+      if (e.touches.length === 1) {
+        dragging = true;
+        dragStart = { x: e.touches[0].clientX - tx, y: e.touches[0].clientY - ty };
+      } else if (e.touches.length === 2) {
+        dragging = false;
+        pinchStart = { d: dist(e.touches[0], e.touches[1]), scale: scale };
+      }
+    }, { passive: true });
+    stage.addEventListener('touchmove', function (e) {
+      if (e.touches.length === 1 && dragging) {
+        tx = e.touches[0].clientX - dragStart.x; ty = e.touches[0].clientY - dragStart.y;
+        apply();
+      } else if (e.touches.length === 2 && pinchStart) {
+        e.preventDefault();
+        scale = clampScale(pinchStart.scale * (dist(e.touches[0], e.touches[1]) / pinchStart.d));
+        apply();
+      }
+    }, { passive: false });
+    stage.addEventListener('touchend', function (e) {
+      if (e.touches.length === 0) { dragging = false; pinchStart = null; }
+    });
+    window.addEventListener('resize', function () {
+      if (modal.classList.contains('on') && currentVB) fitToStage(currentVB);
+    });
+  })();
+
+  render();
+})();
+</script>
+</body>
+</html>

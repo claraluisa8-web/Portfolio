@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clara Luisa Matthews | UX, interface and research designer in Raleigh, NC</title>
+<meta name="description" content="Interface and research designer in Raleigh, NC. UX for professionals who work alongside AI.">
+<link rel="canonical" href="https://claramatthews.com/">
+<meta name="theme-color" content="#FFFBF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#212E5E" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clara Luisa Matthews">
+<meta property="og:title" content="Clara Luisa Matthews | UX, interface and research designer in Raleigh, NC">
+<meta property="og:description" content="Interface and research designer in Raleigh, NC. UX for professionals who work alongside AI.">
+<meta property="og:url" content="https://claramatthews.com/">
+<meta property="og:image" content="https://claramatthews.com/og/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clara Luisa Matthews | UX, interface and research designer in Raleigh, NC">
+<meta name="twitter:description" content="Interface and research designer in Raleigh, NC. UX for professionals who work alongside AI.">
+<meta name="twitter:image" content="https://claramatthews.com/og/og-home.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Clara Luisa Matthews", "jobTitle": "Interface and research designer", "url": "https://claramatthews.com/", "sameAs": ["https://www.linkedin.com/in/claralum"], "address": {"@type": "PostalAddress", "addressLocality": "Raleigh", "addressRegion": "NC", "addressCountry": "US"}, "knowsAbout": ["UX design", "Interface design", "Interaction design", "Human-AI interaction", "User research", "Design systems"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300..800;1,400&family=Poppins:wght@500;600&family=Spectral:ital,wght@1,300&display=swap">
+<style>
+:root{--ground:#FFE8F0;--ink:#12161C;--mute:#4E5866;--rose:#D6246E;--rose-txt:#B81A5C;--rule:rgba(18,22,28,.14);--card:#fff;--ease:cubic-bezier(.6,.2,.1,1)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#1A141B;--ink:#F5EFF2;--mute:#A99AA3;--rose:#F573A0;--rose-txt:#F573A0;--rule:rgba(245,239,242,.16);--card:#221A24}}
+:root[data-theme="dark"]{--ground:#1A141B;--ink:#F5EFF2;--mute:#A99AA3;--rose:#F573A0;--rose-txt:#F573A0;--rule:rgba(245,239,242,.16);--card:#221A24}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Karla",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.topline{max-width:1040px;margin:0 auto;padding:20px 28px 0;display:flex;align-items:center;gap:14px}
+.ident{display:flex;align-items:center;gap:18px}.ident svg{width:34px;height:auto}
+.nm{font-family:"Poppins",sans-serif;font-weight:500;letter-spacing:.03em;font-size:1.4rem}
+.links{margin-left:auto;display:flex;align-items:center;gap:26px}
+.links a{font-size:.92rem;font-weight:700;color:var(--mute);text-decoration:none}
+.links .talk{background:var(--ink);color:var(--ground);border-radius:999px;padding:11px 20px}
+.menubtn{display:none;margin-left:auto;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;padding:0;background:transparent;border:none;cursor:pointer}
+.menubtn span{display:block;width:22px;height:2px;margin:0 auto;background:var(--ink);border-radius:2px;transition:transform .25s var(--ease),opacity .25s var(--ease)}
+.menubtn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menubtn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menubtn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobilenav{display:none;flex-direction:column;gap:2px;max-width:1040px;margin:0 auto;padding:4px 28px 18px}
+.mobilenav a{padding:15px 2px;font-size:1.05rem;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.mobilenav a.talk{border-bottom:none;margin-top:10px;justify-content:center;display:flex;background:var(--ink);color:var(--ground);border-radius:999px;padding:13px}
+.mobilenav.open{display:flex}
+
+/* ============ the headline: one word is made of dots and keeps becoming another ============ */
+.first{min-height:calc(100svh - 84px + 100px);display:flex;flex-direction:column;justify-content:center;padding:20px 0 60px;position:relative}
+.eyebrow{font-size:.74rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--rose-txt);margin:0 0 18px}
+h1{font-family:"Poppins",sans-serif;font-weight:600;letter-spacing:.02em;font-size:clamp(2.16rem,6.12vw,4.5rem);line-height:1.04;margin:0 0 22px;text-wrap:balance}
+/* the connector words ("is"/"the") are a lighter, quieter serif set against the bold geometric
+   dot-rendered words - Newsreader's x-height reads noticeably smaller than Poppins' at the same
+   size, so .joint gets its own upsized, tighter-tracked treatment instead of inheriting h1's */
+.joint{font-family:"Newsreader",serif;font-weight:300;font-style:italic;letter-spacing:0;font-size:1.037em}/* the canvas is 1.22em tall with the glyph baseline at .95em, so the svg hangs .27em below
+   the text baseline and its glyphs land at exactly the surrounding size */
+.dotword{display:inline;color:var(--rose);position:relative;cursor:default;outline:none}
+.dotword:focus-visible .clip{outline:2px solid var(--rose);outline-offset:6px;border-radius:6px}
+/* the clip is as wide as the current word and slides; the canvas inside is sized for the wider one */
+.dotword .clip{display:inline-block;height:1.22em;width:var(--w,4em);vertical-align:-.27em;overflow:hidden}
+.dotword canvas{display:block;height:1.22em;width:auto}
+.brEdge{display:none}
+.sub{font-size:1.08rem;color:var(--mute);max-width:56ch;margin:0 0 30px}
+.cta{display:inline-flex;align-self:flex-start;align-items:center;gap:9px;background:var(--ink);color:var(--ground);border-radius:999px;padding:12px 22px;font-size:.83rem;font-weight:700;text-decoration:none}
+.cue{position:absolute;left:0;bottom:14px;font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:10px;text-decoration:none}
+.cue span{display:inline-block;width:1px;height:34px;background:var(--mute);transform-origin:top;animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);opacity:0}35%{transform:scaleY(1);opacity:.8}100%{transform:scaleY(1) translateY(30px);opacity:0}}
+
+
+/* ============ selected work below the fold ============ */
+.work{padding:34px 0 10px}
+.secthead{font-family:"Poppins",sans-serif;font-weight:600;font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.06;letter-spacing:-.02em;color:var(--ink);margin:0 0 32px}
+.band{position:relative;isolation:isolate;overflow:hidden;border-radius:64px;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:16/10;background:var(--ink);color:#FFE8F0;text-decoration:none;margin:0 0 30px;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.band:hover{transform:translateY(-3px);box-shadow:0 30px 70px rgba(18,22,28,.28)}
+.band .frame{position:absolute;inset:0;z-index:0}.band .frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.band:hover .frame img{transform:scale(1.035)}
+.band::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,rgba(18,22,28,.92) 0%,rgba(18,22,28,.76) 28%,rgba(18,22,28,.46) 52%,rgba(18,22,28,.14) 78%,rgba(18,22,28,0) 100%)}
+.line{position:relative;z-index:2;display:grid;grid-template-columns:3fr 5fr 4fr;gap:0 26px;align-items:end;padding:0 48px 44px}
+.big{font-family:"Poppins",sans-serif;font-weight:500;font-size:2rem;line-height:1.1;letter-spacing:-.01em;margin:0;font-variant-numeric:tabular-nums}
+.yr{color:rgba(255,232,240,.74);margin-left:.5em}
+.small{font-size:.89rem;line-height:1.5;color:rgba(255,232,240,.74);margin:8px 0 0;max-width:34ch}
+.line > div:last-child .small{margin-top:0}
+.title{font-family:"Poppins",sans-serif;font-weight:600;font-size:clamp(2.4rem,6.4vw,4.5rem);line-height:.98;letter-spacing:-.035em;margin:-.06em 0 0;text-shadow:0 2px 24px rgba(18,22,28,.35);transition:color .2s}
+.band:hover .title{color:#F573A0}
+.js [data-r]{transform:translateY(22px);transition:transform .6s var(--ease);transition-delay:var(--d,0ms)}
+.js [data-r].in{transform:none}
+.allwork{display:inline-flex;gap:9px;margin:4px 0 20px;font-size:.83rem;font-weight:700;color:var(--mute);text-decoration:none}
+.foot{max-width:1040px;margin:30px auto 0;padding:24px 28px 0;border-top:1px solid var(--rule);font-size:.86rem;color:var(--mute)}
+
+@media (max-width:760px){.links{display:none}.menubtn{display:flex}.ident svg{width:26.25px}.nm{font-size:1.125rem}.ident{gap:15px}.first{min-height:calc(100svh - 84px + 100px);padding:106px 0 40px;align-items:flex-start;justify-content:flex-start}.eyebrow{margin:0 0 26px}h1{font-size:clamp(2.34rem,12.15vw,3.06rem);line-height:1.15;margin-bottom:28px}.sub{margin-bottom:36px}.line{grid-template-columns:1fr;gap:8px;padding:0 26px 28px}.title{font-size:clamp(2.2rem,11vw,3rem);order:-1;margin:2px 0 6px}.band{aspect-ratio:4/5;border-radius:40px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-r]{opacity:1!important;transform:none!important}}
+
+.band .small{text-wrap:pretty}
+.band--text{aspect-ratio:auto;cursor:default}
+.band--text:hover{transform:none;box-shadow:none}
+.band--text::after{display:none}
+.band--text:hover .title{color:inherit}
+.band--static{cursor:default}
+.band .kind{position:absolute;z-index:2;top:49px;left:48px;font:700 .8rem/1 "Karla",sans-serif;letter-spacing:.14em;text-transform:uppercase;
+ padding:12px 18px 11px;border-radius:999px;border:1px solid rgba(255,251,247,.6)}
+@media (max-width:760px){.band .kind{top:29px;left:26px;font-size:.74rem;padding:10px 15px 9px}}
+.band .kind--case{background:var(--band-fg);color:#212E5E;border-color:var(--band-fg)}
+.band .kind--archive{background:rgba(20,28,61,.35);color:var(--band-fg)}
+.band--static:hover{transform:none;box-shadow:none}
+.band--static:hover .frame img{transform:none}
+.band--static:hover .title{color:inherit}
+.band--coulture .frame img{object-position:50% 29%}
+@media (max-width:760px){.band--coulture .frame img{object-position:50% 22%}}
+.band--text .line{padding:44px 48px}
+@media (max-width:760px){.band--text .line{padding:34px 26px 32px}}
+.band--soon .frame img{filter:grayscale(.7) brightness(.86);transition:filter .4s var(--ease)}
+.band--soon .line{opacity:.78}
+.band--soon .soonhover{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1.05rem;letter-spacing:.04em;color:#FFE8F0;background:rgba(18,22,28,.52);opacity:0;transition:opacity .3s var(--ease);pointer-events:none}
+.band--soon:hover .soonhover{opacity:1}
+.band--soon .soonhover svg{width:22px;height:22px;flex:0 0 22px}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--ink);color:var(--ground);padding:11px 18px;border-radius:0 0 12px 0;font-size:.82rem;font-weight:700;text-decoration:none}
+.skip:focus{left:0}
+
+.contact{padding:18px 0 52px}
+.cbox{background:var(--card);border:1px solid var(--rule);border-radius:56px;padding:60px 60px 56px}
+.chead{font-family:"Poppins",sans-serif;font-weight:600;font-size:clamp(2rem,5vw,3.3rem);line-height:1.06;letter-spacing:-.03em;margin:0 0 18px;max-width:16ch;text-wrap:balance}
+.contact .cline{font-size:1.1rem;color:var(--mute);max-width:46ch;margin:0 0 30px;text-wrap:pretty}
+.cemail{margin:0 0 22px}
+.cemail .maillink{font-size:clamp(1.15rem,3.2vw,1.75rem);font-weight:700;text-decoration-thickness:2px;text-decoration-color:var(--rose);text-underline-offset:8px}
+@media (max-width:760px){.cbox{border-radius:36px;padding:38px 26px 36px}}
+
+.clinks{display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;font-size:.95rem;font-weight:700}
+.clinks a,button.maillink{font:inherit;color:var(--ink);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:5px;transition:color .18s,text-decoration-color .18s}
+.clinks a:hover,button.maillink:hover{color:var(--rose-txt);text-decoration-color:var(--rose-txt)}
+.clinks a:focus-visible,button.maillink:focus-visible{outline:2px solid var(--rose);outline-offset:4px;border-radius:3px}
+.mailwrap{position:relative;display:inline-block}
+.mailmenu{display:none;position:absolute;left:0;bottom:calc(100% + 10px);z-index:50;min-width:218px;flex-direction:column;gap:1px;padding:8px;border-radius:14px;background:var(--card);border:1px solid var(--rule);box-shadow:0 16px 40px rgba(18,22,28,.18)}
+[aria-expanded="true"] + .mailmenu{display:flex}
+.yr{display:inline-block;white-space:nowrap}
+.mailhead{font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:5px 9px 7px}
+.mailmenu a,.mailmenu button{display:block;width:100%;text-align:left;font-family:inherit;font-size:.82rem;font-weight:700;color:var(--ink);text-decoration:none;background:none;border:0;padding:9px;border-radius:9px;cursor:pointer}
+.mailmenu a:hover,.mailmenu button:hover{background:rgba(18,22,28,.06);color:var(--rose-txt)}
+.mailmenu a:focus-visible,.mailmenu button:focus-visible{outline:2px solid var(--rose);outline-offset:-2px}
+</style>
+<style id="theme">
+:root{--ground:#FFFBF7;--ink:#151D3B;--mute:#59606B;--rose:#9E1C3C;--rose-txt:#9E1C3C;--blue:#004FDF;--on-blue:#FFFFFF;
+ --bar:#212E5E;--on-bar:#FFFBF7;--eyebrow:#212E5E;--pill:#212E5E;
+ --tint:#F2EDE8;--card:#FFFFFF;--rule:rgba(21,29,59,.14);--edge:rgba(21,29,59,.06);--band:#1B2550;--band-fg:#FFFBF7;--band-hi:#F78DA0;--hairline:#171C20;
+ --lg1:#1F9F00;--lg2:#A8D600;--lr:#ED2C00;--lp:#F23483}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#212E5E;--ink:#FFFBF7;--mute:#B7BEDA;--rose:#F78DA0;--rose-txt:#F78DA0;--bar:#34447F;--on-bar:#FFFBF7;--eyebrow:var(--rose-txt);--pill:var(--ink);
+ --blue:#99BDFF;--on-blue:#000000;--tint:#2C3B73;--card:#2A386F;--rule:rgba(255,251,247,.16);--edge:rgba(255,251,247,.07);--band:#141C3D;--hairline:transparent;
+ --lg1:#26C000;--lg2:#A8D600;--lr:#FF542D;--lp:#FF4794;color-scheme:dark}}
+:root[data-theme="dark"]{--ground:#212E5E;--ink:#FFFBF7;--mute:#B7BEDA;--rose:#F78DA0;--rose-txt:#F78DA0;--bar:#34447F;--on-bar:#FFFBF7;--eyebrow:var(--rose-txt);--pill:var(--ink);
+ --blue:#99BDFF;--on-blue:#000000;--tint:#2C3B73;--card:#2A386F;--rule:rgba(255,251,247,.16);--edge:rgba(255,251,247,.07);--band:#141C3D;--hairline:transparent;
+ --lg1:#26C000;--lg2:#A8D600;--lr:#FF542D;--lp:#FF4794;color-scheme:dark}
+body{background:var(--ground);color:var(--ink)}
+.lg1{fill:var(--lg1)}.lg2{fill:var(--lg2)}.lr{fill:var(--lr)}.lp{fill:var(--lp)}
+/* logo: each centre petal about the cap height of the "C" in the wordmark beside it (a petal is a quarter of the logo's width) */
+.ident svg{width:64px;height:auto}
+.topbar svg,body:has(.sheet) .ident svg{width:51px;height:auto}
+@media (max-width:760px){.ident svg{width:51px}}
+@media (max-width:640px){.topbar svg,body:has(.sheet) .ident svg{width:48px}}
+.eyebrow,h2:not(.title):not(.chead):not(.secthead),.sum .k,.chips .r b,.flow .me{color:var(--rose-txt)}
+.mailmenu a:hover,.mailmenu button:hover{color:var(--rose-txt)}
+.steps.tiles .n{background:var(--rose-txt);color:var(--ground)}
+.flow .st.on{background:var(--rose-txt)}
+.links .talk:hover,.totop:hover,.navtoggle:hover,.evimg-zoom:hover .zoomtag,.evimg-zoom:focus-visible .zoomtag{background:var(--rose-txt);border-color:var(--rose-txt);color:var(--ground)}
+.vid .pbtn{background:var(--rose-txt);box-shadow:0 6px 22px rgba(21,29,59,.25)}
+/* landing work cards: the dark neutral behind the photos, light type */
+.band{background:var(--band);color:var(--band-fg)}
+.band:hover{box-shadow:0 30px 70px rgba(21,29,59,.25)}
+.band::after{background:linear-gradient(to top,rgba(20,28,61,.94) 0%,rgba(20,28,61,.78) 28%,rgba(20,28,61,.46) 52%,rgba(20,28,61,.14) 78%,rgba(20,28,61,0) 100%)}
+.band .yr,.band .small{color:rgba(255,251,247,.8)}
+.band:hover .title{color:var(--band-hi)}
+.band--soon .soonhover{color:var(--band-fg);background:rgba(20,28,61,.55)}
+.mailmenu{box-shadow:0 16px 40px rgba(21,29,59,.18)}
+/* one end margin on every page (~125px below the last content); About already ends on its contact card padding */
+body:has(.first){padding-bottom:128px}
+body:has(.sheet){padding-bottom:128px!important}
+body:has(.topbar){padding-bottom:110px}
+/* case study evidence bars: full width with the plus sign, in the subheader blue (Figma: case study buttons) */
+/* dropdown bars: navy, set in Poppins (her picks, 2026-10-24) */
+.ev summary{background:var(--bar);color:var(--on-bar);padding-top:12px;padding-bottom:13px;box-shadow:0 .5px 1px rgba(10,16,40,.3);font-family:"Poppins",system-ui,sans-serif;font-weight:600}
+/* landing eyebrow: navy in light mode */
+p.eyebrow{color:var(--eyebrow)}
+/* the headline's joining words ("is", "the"): Spectral Light Italic, her pick 2026-10-24; sized so its x-height
+   matches what Newsreader had at 1.037em */
+.joint{font-family:"Spectral",serif;font-weight:300;font-style:italic;font-size:1.017em}
+/* "See the work" and "Let's talk" pills: navy in light mode */
+.cta,.links .talk,.mobilenav a.talk{background:var(--pill)}
+/* tile and pill boxes: 5px more room under the text (her ask, 2026-10-24) */
+.steps.tiles li{padding-bottom:27px}
+.pills .pill,.ev .inner .pills .pill{padding-bottom:27px}
+.ev summary .tick{border-color:currentColor}
+.ev summary .tick::after,.ev summary .tick::before{background:currentColor}
+.ev .cnt{color:currentColor;opacity:.75}
+.ev summary:focus-visible{outline:2px solid var(--rose-txt);outline-offset:3px}
+</style>
+<style id="homelink">a.ident,a.home{color:inherit;text-decoration:none}a.home{display:flex;align-items:center;gap:15px}a.ident:focus-visible,a.home:focus-visible{outline:2px solid var(--rose-txt,#B81A5C);outline-offset:4px;border-radius:6px}</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="topline">
+  <a class="ident" href="/" aria-label="Clara Luisa Matthews, home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.302 352" role="img" aria-label="Clara Matthews"><path class="lg1" d="M102.326 249.675C158.838 249.675 204.651 295.487 204.651 352C148.138 352 102.326 306.187 102.326 249.675Z"/><path class="lg1" d="M102.325 176C102.325 232.513 56.5129 278.325 0 278.325C0.000210287 221.813 45.8126 176 102.325 176Z"/><path class="lg2" d="M102.326 102.325C158.838 102.325 204.651 56.5129 204.651 0C148.138 0.000210287 102.326 45.8126 102.326 102.325Z"/><path class="lr" d="M102.326 176C102.326 119.487 148.138 73.6748 204.651 73.6748C204.651 130.187 158.839 176 102.326 176Z"/><path class="lg1" d="M306.977 249.675C363.49 249.675 409.302 295.487 409.302 352C352.789 352 306.977 306.187 306.977 249.675Z"/><path class="lg1" d="M306.977 176C306.977 119.487 352.789 73.6748 409.302 73.6748C409.302 130.187 363.49 176 306.977 176Z"/><path class="lg2" d="M306.977 102.325C363.49 102.325 409.302 56.5129 409.302 0C352.789 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lr" d="M306.976 176C306.976 232.513 261.164 278.325 204.651 278.325C204.651 221.813 250.464 176 306.976 176Z"/><path class="lg2" d="M102.326 249.675C45.8127 249.675 0.00038147 295.487 0.00038147 352C56.5129 352 102.325 306.187 102.326 249.675Z"/><path class="lg2" d="M102.325 176C102.325 119.487 56.5129 73.6748 0 73.6748C0.000210287 130.187 45.8126 176 102.325 176Z"/><path class="lg1" d="M102.326 102.325C45.8127 102.325 0.00038147 56.5129 0.00038147 0C56.5129 0.000210287 102.325 45.8126 102.326 102.325Z"/><path class="lp" d="M102.326 176C102.326 232.513 148.138 278.325 204.651 278.325C204.651 221.813 158.839 176 102.326 176Z"/><path class="lg2" d="M306.977 249.675C250.464 249.675 204.652 295.487 204.652 352C261.164 352 306.977 306.187 306.977 249.675Z"/><path class="lg2" d="M306.977 176C306.977 232.513 352.789 278.325 409.302 278.325C409.302 221.813 363.49 176 306.977 176Z"/><path class="lg1" d="M306.977 102.325C250.464 102.325 204.652 56.5129 204.652 0C261.164 0.000210287 306.977 45.8126 306.977 102.325Z"/><path class="lp" d="M306.976 176C306.976 119.487 261.164 73.6748 204.651 73.6748C204.651 130.187 250.464 176 306.976 176Z"/></svg><span class="nm">Clara Luisa Matthews</span></a>
+  <nav class="links" aria-label="Main"><a href="#work">Work</a><a href="/about/">About</a><a href="/resume/">Résumé</a><a class="talk" href="#contact">Let's talk</a></nav>
+  <button type="button" class="menubtn" id="menubtn" aria-expanded="false" aria-controls="mobilenav" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+<nav class="mobilenav" id="mobilenav" aria-label="Mobile"><a href="#work">Work</a><a href="/about/">About</a><a href="/resume/">Résumé</a><a class="talk" href="#contact">Let's talk</a></nav>
+
+<main class="wrap" id="main">
+  <section class="first">
+    <p class="eyebrow">Interface &amp; research designer &middot; Designing since 2018 &middot; Raleigh, NC</p>
+    <h1 id="line"><span class="dotword" id="w1" tabindex="0"><span class="sr">Difficulty</span></span><br class="brEdge"><span class="joint"> is </span><br class="brMid"><span class="joint">the </span><br class="brEdge"><span class="dotword" id="w2" tabindex="0"><span class="sr">brief.</span></span></h1>
+    <p class="sub">Tools for professionals who work alongside AI, shaped for the human-in-the-loop.</p>
+    <a class="cta" href="#work">See the work &rarr;</a>
+  </section>
+
+
+  <section class="work" id="work">
+    <h2 class="secthead" data-r>Selected work</h2>
+    <a class="band" href="/work/arc/" data-r style="--d:0ms"><span class="kind kind--case">Case Study</span>
+      <div class="line"><div><p class="big">2026</p><p class="small">Interface, Research</p></div><h3 class="title">Arc</h3><div><p class="small">An agentic workspace for intelligence reporters, built to be overruled.</p></div></div>
+      <div class="frame"><img src="/img/img-6a1267bfdc.jpg" alt="Arc's narrative structure workspace, showing the proposed report structure beside the agent's reasoning"></div></a>
+    <a class="band" href="/work/design-library/" data-r style="--d:80ms"><span class="kind kind--case">Case Study</span>
+      <div class="line"><div><p class="big">2025</p><p class="small">Research</p></div><h3 class="title">Design Library</h3><div><p class="small">A team research study of how the NC State Design Library's seating options could better support planned group work.</p></div></div><div class="frame"><img src="/img/design-library-card.webp" alt="A blueprint-style floor plan of the Design Library, with study tables, carrels and bookstacks."></div></a>
+    <div class="band band--static band--type-editorial band--soon" data-r style="--d:80ms"><span class="kind kind--archive">Archive</span>
+      <div class="line"><div><p class="big">2024</p><p class="small">Type, Editorial</p></div><h3 class="title">Typographic Work</h3><div><p class="small">My typography portfolio from The&nbsp;New&nbsp;School.</p></div></div><div class="frame"><img src="/img/type-editorial-card.webp" alt="The words Human Acts in soft, blurred letters of dark red dots on a peach ground." loading="lazy"></div><span class="soonhover" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Coming Soon</span></div>
+    <div class="band band--static band--coulture band--soon" data-r style="--d:80ms"><span class="kind kind--archive">Archive</span>
+      <div class="line"><div><p class="big">2017–2021</p><p class="small">Editorial Direction</p></div><h3 class="title">Coulture</h3><div><p class="small">My work as Editor-in-Chief of UNC's first fashion and lifestyle magazine, run entirely by students.</p></div></div><div class="frame"><img src="https://ik.imagekit.io/claraluisa8/coulture/cover.jpg?tr=w-1600,f-auto,q-80" alt="A model in a black top looks down over her bare shoulder, a glass of red wine on the table in front of her, against a black backdrop." loading="lazy"></div><span class="soonhover" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Coming Soon</span></div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="chead">
+    <div class="cbox">
+      <h2 class="chead" id="chead">Let's solve a problem together</h2>
+      <p class="cline">Completing a Master of Graphic &amp; Experience Design at NC State in May 2027. Open to product, research, and agency roles.</p>
+      <p class="cemail"><span class="mailwrap"><button type="button" class="maillink pick" aria-expanded="false">claralumatthews@gmail.com</button><span class="mailmenu"><span class="mailhead">Write to me in</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=claralumatthews%40gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a><a href="https://outlook.live.com/mail/0/deeplink/compose?to=claralumatthews%40gmail.com" target="_blank" rel="noopener noreferrer">Outlook</a><a href="https://compose.mail.yahoo.com/?to=claralumatthews%40gmail.com" target="_blank" rel="noopener noreferrer">Yahoo Mail</a><a href="mailto:claralumatthews@gmail.com">Your default mail app</a><button type="button" class="copyme" data-val="claralumatthews@gmail.com">Copy the address</button></span></span></p>
+      <p class="clinks">
+        <a href="https://www.linkedin.com/in/claralum" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="/resume/">Résumé</a>
+        <span class="sr" role="status" id="mailsay"></span>
+      </p>
+    </div>
+  </section>
+</main>
+<footer class="foot"><b>Clara Luisa Matthews</b> &middot; Raleigh, NC &middot; <a href="#contact" style="color:inherit">Get in touch</a></footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function () {
+  "use strict";
+  var PAIRS = [['Difficulty', 'brief.'], ['Coherence', 'standard.']];
+  var R = 200, MORPH = 900, STAG = 0, LAG = 0, DENS = 5000, SIZE = 1.6;
+  var slots = [document.getElementById('w1'), document.getElementById('w2')], line = document.getElementById('line');
+  var S = [], idx = 0, busy = false, pending = null, raf = null, wordRef = 0;
+
+  function noise(x, y) { var s = Math.sin(x * .055 + 1.7) * Math.cos(y * .047) + .55 * Math.sin(x * .12 + y * .08) + .3 * Math.cos(x * .21 - y * .17); return .5 + .5 * Math.tanh(s); }
+  /* cubic-bezier(.6,.2,.1,1) */
+  function ease(t) { var a = 3 * .6 - 3 * .1 + 1, b = 3 * .1 - 6 * .6, c = 3 * .6, x = t, i; for (i = 0; i < 6; i++) { var f = ((a * x + b) * x + c) * x - t, d = (3 * a * x + 2 * b) * x + c; if (Math.abs(d) < 1e-6) break; x -= f / d; } x = Math.max(0, Math.min(1, x)); var ya = 3 * .2 - 3 * 1 + 1, yb = 3 * 1 - 6 * .2, yc = 3 * .2; return ((ya * x + yb) * x + yc) * x; }
+  function ctx2() { var c = document.createElement('canvas').getContext('2d'); c.font = '600 ' + R + 'px Poppins, sans-serif'; return c; }
+  function raster(word, W, H) {
+    var c = document.createElement('canvas'); c.width = W; c.height = H; var x = c.getContext('2d');
+    x.font = '600 ' + R + 'px Poppins, sans-serif'; x.textBaseline = 'alphabetic'; x.fillStyle = '#000'; x.fillText(word, 6, R * .95);
+    var d = x.getImageData(0, 0, W, H).data, a = new Float32Array(W * H), i, area = 0;
+    for (i = 0; i < W * H; i++) { a[i] = d[i * 4 + 3] / 255; if (a[i] > .5) area++; }
+    return { a: a, area: area, w: ctx2().measureText(word).width + 36 };
+  }
+  function sample(f, W, H, N) {
+    var pts = [], tries = 0, edgeN = Math.round(N * .34), x, y, i, aa;
+    while (pts.length < edgeN && tries < N * 200) { tries++; x = Math.random() * W; y = Math.random() * H; aa = f.a[(y | 0) * W + (x | 0)]; if (aa > .3 && aa < .92) pts.push({ x: x, y: y, k: 1 }); }
+    tries = 0;
+    while (pts.length < N && tries < N * 200) { tries++; x = Math.random() * W; y = Math.random() * H; i = (y | 0) * W + (x | 0); aa = f.a[i]; if (aa < .92) continue; var kk = .62 + .38 * noise(x, y); if (Math.random() < kk) pts.push({ x: x, y: y, k: kk }); }
+    return pts;
+  }
+  /* when a word pair's two words need very different dot counts (e.g. "brief." vs "standard."),
+     the shorter word's field has to be reused to fill out the shared array of N dots. Reusing it
+     cyclically (index % length) always doubles up the SAME leading slice of points, which reads as
+     unevenly clumped or "still forming" in one spot rather than a clean, evenly-dense word. Mapping
+     every index beyond the field's own length to a random point in it spreads the unavoidable
+     doubling evenly instead. */
+  function mapIndices(len, N) {
+    var idx = new Int32Array(N);
+    for (var i = 0; i < N; i++) idx[i] = i < len ? i : Math.floor(Math.random() * len);
+    return idx;
+  }
+
+  function fit(st) {
+    /* internal resolution follows the rendered size, so dots stay crisp on any screen */
+    var dpr = Math.min(2, window.devicePixelRatio || 1), cssH = (parseFloat(getComputedStyle(st.clip).fontSize) * 1.22) || st.clip.clientHeight || 1;
+    st.scale = cssH / st.H; st.cv.style.width = (st.W * st.scale) + 'px';
+    st.cv.width = Math.round(st.W * st.scale * dpr); st.cv.height = Math.round(cssH * dpr);
+    st.g = st.cv.getContext('2d'); st.g.setTransform(st.scale * dpr, 0, 0, st.scale * dpr, 0, 0);
+    st.color = getComputedStyle(st.host).color;
+  }
+
+  function setup() {
+    S = []; idx = 0; busy = false; pending = null; if (raf) { cancelAnimationFrame(raf); raf = null; }
+    wordRef = 0;
+    slots.forEach(function (host, s) {
+      var words = PAIRS.map(function (pr) { return pr[s]; }), c = ctx2(), Wmax = 0;
+      words.forEach(function (t) { Wmax = Math.max(Wmax, c.measureText(t).width); });
+      var W = Math.ceil(Wmax) + 36, H = Math.ceil(R * 1.22);
+      var rasters = words.map(function (t) { return raster(t, W, H); });
+      if (!wordRef) wordRef = raster('Difficulty', Math.ceil(c.measureText('Difficulty').width) + 12, H).area;
+      var fields = rasters.map(function (r) { return sample(r, W, H, Math.max(300, Math.round(DENS * r.area / wordRef))); });
+      var N = Math.max.apply(null, fields.map(function (f) { return f.length; })), i;
+      host.innerHTML = '<span class="sr">' + words[0] + '</span><span class="clip" style="--w:' + (rasters[0].w / R).toFixed(3) + 'em"><canvas aria-hidden="true"></canvas></span>';
+      var st = { host: host, clip: host.querySelector('.clip'), cv: host.querySelector('canvas'), W: W, H: H, fields: fields,
+                 widths: rasters.map(function (r) { return r.w / R; }), words: words, N: N,
+                 x: new Float32Array(N), y: new Float32Array(N), r: new Float32Array(N), o: new Float32Array(N) };
+      var idx0 = mapIndices(fields[0].length, N);
+      for (i = 0; i < N; i++) { var q = fields[0][idx0[i]]; st.x[i] = q.x; st.y[i] = q.y; st.r[i] = SIZE + q.k * SIZE * .5; st.o[i] = 1; }
+      fit(st); S.push(st); draw(st);
+    });
+  }
+
+  function draw(st) {
+    var g = st.g; g.clearRect(0, 0, st.W, st.H); g.fillStyle = st.color; var i, last = 1;
+    g.font = '600 ' + R + 'px Poppins, sans-serif'; g.textBaseline = 'alphabetic';
+    var wp = st.wp === undefined ? 1 : st.wp, wf = st.wfrom, wt = st.wto === undefined ? idx : st.wto, k;
+    if (wp >= 1) { g.fillText(st.words[wt], 6, R * .95); return; }
+    g.save(); g.beginPath();
+    if (wp < .5) { k = wp / .5; g.rect(k * st.widths[wf] * R, 0, st.W, st.H); g.clip(); g.fillText(st.words[wf], 6, R * .95); }
+    else { k = (wp - .5) / .5; g.rect(0, 0, k * st.widths[wt] * R, st.H); g.clip(); g.fillText(st.words[wt], 6, R * .95); }
+    g.restore(); return;
+    for (i = 0; i < st.N; i++) {
+      if (st.o[i] !== last) { g.globalAlpha = last = st.o[i]; }
+      g.beginPath(); g.arc(st.x[i], st.y[i], st.r[i], 0, 6.2832); g.fill();
+    }
+    g.globalAlpha = 1;
+  }
+
+  function morphTo(t) {
+    if (t === idx) { pending = null; return; }
+    if (busy) { pending = t; return; }
+    busy = true;
+    var t0 = performance.now(), total = LAG + MORPH + STAG;
+    S.forEach(function (st, s) {
+      var from = st.fields[idx], dest = st.fields[t], i, N = st.N;
+      var fromIdx = mapIndices(from.length, N), destIdx = mapIndices(dest.length, N);
+      st.ax = new Float32Array(N); st.ay = new Float32Array(N); st.bx = new Float32Array(N); st.by = new Float32Array(N); st.jx = new Float32Array(N); st.jy = new Float32Array(N); st.dl = new Float32Array(N);
+      for (i = 0; i < N; i++) {
+        var a = from[fromIdx[i]], b = dest[destIdx[i]];
+        st.ax[i] = a.x; st.ay[i] = a.y; st.bx[i] = b.x; st.by[i] = b.y;
+        st.jx[i] = a.x + (Math.random() - .5) * 34; st.jy[i] = a.y - 6 - Math.random() * 24;
+        st.dl[i] = s * LAG + (i / N) * STAG;
+      }
+      st.w0 = st.widths[idx]; st.w1 = st.widths[t];
+      var sr = st.host.querySelector('.sr'); setTimeout(function () { sr.textContent = st.words[t]; }, s * LAG + MORPH * .5);
+    });
+    function frame(now) {
+      var el = now - t0, done = el >= total;
+      S.forEach(function (st, s) {
+        for (var i = 0; i < st.N; i++) {
+          var u = (el - st.dl[i]) / MORPH; if (u <= 0) continue;
+          if (u >= 1) { st.x[i] = st.bx[i]; st.y[i] = st.by[i]; st.o[i] = 1; continue; }
+          var e = ease(u);
+          if (e < .45) { var k = e / .45; st.x[i] = st.ax[i] + (st.jx[i] - st.ax[i]) * k; st.y[i] = st.ay[i] + (st.jy[i] - st.ay[i]) * k; st.o[i] = 1 - .7 * k; }
+          else { var m = (e - .45) / .55; st.x[i] = st.jx[i] + (st.bx[i] - st.jx[i]) * m; st.y[i] = st.jy[i] + (st.by[i] - st.jy[i]) * m; st.o[i] = .3 + .7 * m; }
+        }
+        var wu = Math.max(0, Math.min(1, (el - s * LAG - STAG) / MORPH));
+        st.clip.style.width = (st.w0 + (st.w1 - st.w0) * ease(wu)).toFixed(3) + 'em';
+        st.wp = ease(Math.min(1, el / total)); st.wfrom = idx; st.wto = t;
+        /* the window holds the old word's width until it has wiped away, then grows or shrinks only as the new word
+           wipes in, so its edge never cuts into letters that are still showing */
+        st.clip.style.width = (st.wp < .5 ? st.w0 : st.w0 + (st.w1 - st.w0) * ((st.wp - .5) / .5)).toFixed(3) + 'em';
+        draw(st);
+      });
+      if (!done) { raf = requestAnimationFrame(frame); return; }
+      raf = null; idx = t; busy = false;
+      if (pending !== null && pending !== idx) { var n = pending; pending = null; morphTo(n); } else pending = null;
+    }
+    raf = requestAnimationFrame(frame);
+  }
+
+  line.addEventListener('mouseenter', function () { morphTo(1); });
+  line.addEventListener('mouseleave', function () { morphTo(0); });
+  slots.forEach(function (sl) { sl.addEventListener('focus', function () { morphTo(1); }); sl.addEventListener('blur', function () { morphTo(0); }); });
+  line.addEventListener('touchend', function (e) { e.preventDefault(); morphTo(idx === 0 ? 1 : 0); }, { passive: false });
+
+  var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .18, rootMargin: '0px 0px -6% 0px' }) : null;
+  var rs = document.querySelectorAll('[data-r]'); for (var q = 0; q < rs.length; q++) { if (io) io.observe(rs[q]); else rs[q].classList.add('in'); }
+
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { if (!busy) { S.forEach(function (st) { fit(st); draw(st); }); } }, 120); });
+
+  var menubtn = document.getElementById('menubtn'), mobilenav = document.getElementById('mobilenav');
+  function closeMenu() { menubtn.setAttribute('aria-expanded', 'false'); mobilenav.classList.remove('open'); }
+  menubtn.addEventListener('click', function () {
+    var open = menubtn.getAttribute('aria-expanded') === 'true';
+    menubtn.setAttribute('aria-expanded', String(!open)); mobilenav.classList.toggle('open', !open);
+  });
+  mobilenav.addEventListener('click', function (e) { if (e.target.tagName === 'A') closeMenu(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+
+  (function () {
+    function picks() { return document.querySelectorAll('.pick'); }
+    function shutAll() { var all = picks(), i; for (i = 0; i < all.length; i++) all[i].setAttribute('aria-expanded', 'false'); }
+    document.addEventListener('click', function (e) {
+      var t = e.target, pk = t.closest ? t.closest('.pick') : null;
+      if (pk) { var open = pk.getAttribute('aria-expanded') !== 'true'; shutAll(); pk.setAttribute('aria-expanded', open ? 'true' : 'false'); return; }
+      var cp = t.closest ? t.closest('.copyme') : null;
+      if (cp) {
+        var val = cp.getAttribute('data-val'), say = document.getElementById('mailsay');
+        var done = function (ok) { if (say) say.textContent = ok ? 'Copied: ' + val : 'Copy is unavailable here. The address is ' + val; };
+        try { if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(val).then(function () { done(true); }, function () { done(false); }); else done(false); } catch (err) { done(false); }
+        return;
+      }
+      if (!(t.closest && t.closest('.mailwrap'))) shutAll();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      var all = picks(), i;
+      for (i = 0; i < all.length; i++) if (all[i].getAttribute('aria-expanded') === 'true') { all[i].setAttribute('aria-expanded', 'false'); all[i].focus(); return; }
+    });
+  })();
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mobile = window.matchMedia && window.matchMedia('(max-width:760px)').matches;
+  document.fonts.load('600 200px Poppins').then(function () {
+    if (reduce) { slots[0].innerHTML = 'Difficulty'; slots[1].innerHTML = 'brief.'; return; }
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      setup();
+      if (mobile) { var flips = 0, loop = setInterval(function () { morphTo(idx === 0 ? 1 : 0); if (++flips >= 4) clearInterval(loop); }, 4200); }
+    }); });
+  });
+})();
+</script>
+</body>
+</html>
